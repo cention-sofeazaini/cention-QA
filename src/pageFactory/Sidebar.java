@@ -1,22 +1,31 @@
 package pageFactory;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
-import base.BaseSetup;
 
-public class Sidebar extends BaseSetup {
+public class Sidebar {
 
 WebDriver driver;
 	
 	@FindBy(how = How.CSS, using = "div.sidebar-nav-select:nth-child(2) > div:nth-child(1) > div:nth-child(1)")
 	WebElement errandsDropDown;
 	
-	@FindBy(how = How.XPATH, using = "/html/body/div[1]/div/main/div[2]/div/div/section/div[1]/div[2]/div/div/div/div/div[1]/div[1]")
+	@FindBy(how = How.CSS, using = "[data-qa-id='QA_showCallErrand']")
+	WebElement callButton;
+	
+	@FindBy(how = How.XPATH, using = "/html/body/div[1]/div/main/div[2]/div/div/section/div[1]/div[2]/div/div")
 	WebElement mainMenu;
+	
+	@FindBy(xpath="/html/body/div[1]/div/main/div[2]/div/div/section/div[1]/div[2]/ul/ul[1]/div[3]")
+	WebElement userProfile;
 	
 	@FindBy(how = How.ID, using = "searcherrands")
 	WebElement searchMenu;
@@ -41,6 +50,7 @@ WebDriver driver;
 	@FindBy(how = How.CSS, using = "[data-qa-id='QA_folder_myErrands']")
 	WebElement myErrandsMenu;
 	
+	//@FindBy(how = How.XPATH, using = "/html/body/div[1]/div/main/div[2]/div/div/section/div[1]/div[2]/div/ul[1]/li[3]")
 	@FindBy(how = How.CSS, using = "[data-qa-id='QA_folder_allErrands']")
 	WebElement allErrandsMenu;
 	
@@ -133,5 +143,8 @@ WebDriver driver;
         PageFactory.initElements(driver, this);
 	}
 	
-	
+	public void clickAllErrandMenu(){
+		new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOf(this.allErrandsMenu)).click();
+		//new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOf(this.createButton)).click();	
+	}
 }

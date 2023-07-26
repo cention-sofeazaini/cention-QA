@@ -2,8 +2,6 @@ package pageFactory;
 
 import java.awt.AWTException;
 import java.time.Duration;
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -85,6 +83,9 @@ WebDriver driver;
 	
 	@FindBy(how = How.CSS, using = "[data-qa-id='QA_btn_send']")
 	WebElement sendButton;
+	
+	@FindBy(how = How.XPATH, using = "/html/body/div[5]/div/div[1]/div/div/div[2]/button[1]")
+	WebElement closePopupBox;
 	
 	@FindBy(how = How.XPATH, using = "//*[@id='container']/div/div[1]/div/div[1]/div[2]/form/div[9]/button[2]")
 	//@FindBy(how = How.CLASS_NAME, using = "btn-blue")
@@ -336,9 +337,13 @@ WebDriver driver;
 		
 		boolean actual2 = new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOf(this.sendButton)).isDisplayed();
 		new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOf(this.sendButton)).click();
-			
-		//display Errand ID
+		this.clickYesButton();
+
 		return actual2;
+	}
+	
+	public void clickYesButton(){
+		new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOf(this.closePopupBox)).click();
 	}
 	
 	public void clickCloseErrandPage(){

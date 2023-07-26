@@ -11,11 +11,14 @@
 	<classes>
 		<class name="testCasesArea.ErrandAndWorkflowTC">
 			<methods>
-			    <include name="verifyAllComponentsInManualErrandPage_01"/>
-				<include name="verifyCreateManualErrand_02"/>
-				<include name="verifySendManualErrand_03"/>
+				<include name="verifyInternalComment_04"/>
 			</methods>
 		</class>
 	</classes>
 </test>
 </suite>
+
+
+	<!-- 		    <include name="verifyAllComponentsInManualErrandPage_01"/>
+				<include name="verifyCreateManualErrand_02"/>
+				<include name="verifySendManualErrand_03"/> -->
