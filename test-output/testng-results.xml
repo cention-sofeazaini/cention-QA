@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="cention-QA" duration-ms="7921" started-at="2023-07-25T06:48:45Z" finished-at="2023-07-25T06:48:53Z">
+  <suite name="cention-QA" duration-ms="11010" started-at="2023-07-27T06:03:55Z" finished-at="2023-07-27T06:04:06Z">
     <groups>
     </groups>
-    <test name="Create Manual Errand" duration-ms="7921" started-at="2023-07-25T06:48:45Z" finished-at="2023-07-25T06:48:53Z">
-      <class name="testCasesArea.ErrandAndWorkflowTC">
-        <test-method status="PASS" signature="Base(java.lang.String)[pri:0, instance:testCasesArea.ErrandAndWorkflowTC@45afc369]" name="Base" is-config="true" duration-ms="3520" started-at="2023-07-25T14:48:45Z" finished-at="2023-07-25T14:48:49Z">
+    <test name="login" duration-ms="11010" started-at="2023-07-27T06:03:55Z" finished-at="2023-07-27T06:04:06Z">
+      <class name="testCasesArea.SidebarTC">
+        <test-method status="PASS" signature="Base(java.lang.String)[pri:0, instance:testCasesArea.SidebarTC@45afc369]" name="Base" is-config="true" duration-ms="4096" started-at="2023-07-27T14:03:55Z" finished-at="2023-07-27T14:03:59Z">
           <params>
             <param index="0">
               <value>
@@ -18,41 +18,61 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Base -->
-        <test-method status="PASS" signature="loginToApplication()[pri:0, instance:testCasesArea.ErrandAndWorkflowTC@45afc369]" name="loginToApplication" is-config="true" duration-ms="3922" started-at="2023-07-25T14:48:49Z" finished-at="2023-07-25T14:48:53Z">
+        <test-method status="PASS" signature="loginToApplication()[pri:0, instance:testCasesArea.SidebarTC@45afc369]" name="loginToApplication" is-config="true" duration-ms="3896" started-at="2023-07-27T14:03:59Z" finished-at="2023-07-27T14:04:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApplication -->
-        <test-method status="FAIL" signature="verifyInternalComment_04()[pri:0, instance:testCasesArea.ErrandAndWorkflowTC@45afc369]" name="verifyInternalComment_04" duration-ms="29" started-at="2023-07-25T14:48:53Z" finished-at="2023-07-25T14:48:53Z">
-          <exception class="org.openqa.selenium.InvalidSelectorException">
+        <test-method status="FAIL" signature="verifyCollapseSidebar_01()[pri:0, instance:testCasesArea.SidebarTC@45afc369]" name="verifyCollapseSidebar_01" duration-ms="1627" started-at="2023-07-27T14:04:03Z" finished-at="2023-07-27T14:04:05Z">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
-              <![CDATA[Compound class names not permitted
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+              <![CDATA[stale element reference: stale element not found
+  (Session info: chrome=114.0.5735.248)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: '4.10.0', revision: 'c14d967899'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
-Driver info: driver.version: unknown]]>
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [80fc974f56bcc797f0c2f72b57544bbd, isElementDisplayed {id=C0FDB01137A573911F3016B8356386A3_element_439}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 114.0.5735.16 (7e1ff058633f..., userDataDir: C:\Users\Acer\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63693}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63693/devtoo..., se:cdpVersion: 114.0.5735.248, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (80fc974f56bcc797f0c2f72b57544bbd)] -> xpath: /html/body/div[1]/div/main/div[2]/div/div/section/div[2]/ul]
+Session ID: 80fc974f56bcc797f0c2f72b57544bbd]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.InvalidSelectorException: Compound class names not permitted
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=114.0.5735.248)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: '4.10.0', revision: 'c14d967899'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
-Driver info: driver.version: unknown
-	at org.openqa.selenium.By$ByClassName.<init>(By.java:308)
-	at org.openqa.selenium.By.className(By.java:99)
-	at org.openqa.selenium.support.How$1.buildBy(How.java:26)
-	at org.openqa.selenium.support.AbstractFindByBuilder.buildByFromLongFindBy(AbstractFindByBuilder.java:78)
-	at org.openqa.selenium.support.FindBy$FindByBuilder.buildIt(FindBy.java:85)
-	at org.openqa.selenium.support.pagefactory.Annotations.buildBy(Annotations.java:82)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.<init>(DefaultElementLocator.java:58)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.<init>(DefaultElementLocator.java:46)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocatorFactory.createLocator(DefaultElementLocatorFactory.java:32)
-	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.decorate(DefaultFieldDecorator.java:55)
-	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:109)
-	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:101)
-	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:88)
-	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:76)
-	at pageFactory.ErrandPage.<init>(ErrandPage.java:534)
-	at testCasesArea.ErrandAndWorkflowTC.verifyInternalComment_04(ErrandAndWorkflowTC.java:74)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [80fc974f56bcc797f0c2f72b57544bbd, isElementDisplayed {id=C0FDB01137A573911F3016B8356386A3_element_439}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 114.0.5735.16 (7e1ff058633f..., userDataDir: C:\Users\Acer\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63693}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63693/devtoo..., se:cdpVersion: 114.0.5735.248, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (80fc974f56bcc797f0c2f72b57544bbd)] -> xpath: /html/body/div[1]/div/main/div[2]/div/div/section/div[2]/ul]
+Session ID: 80fc974f56bcc797f0c2f72b57544bbd
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:242)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:298)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy15.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:37)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+	at pageFactory.Sidebar.setDefaultView(Sidebar.java:238)
+	at testCasesArea.SidebarTC.verifyCollapseSidebar_01(SidebarTC.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -79,15 +99,19 @@ Driver info: driver.version: unknown
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyInternalComment_04 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCasesArea.ErrandAndWorkflowTC@45afc369]" name="tearDown" is-config="true" duration-ms="1" started-at="2023-07-25T14:48:53Z" finished-at="2023-07-25T14:48:53Z">
+        </test-method> <!-- verifyCollapseSidebar_01 -->
+        <test-method status="PASS" signature="verifyDisplayAllMenu()[pri:0, instance:testCasesArea.SidebarTC@45afc369]" name="verifyDisplayAllMenu" duration-ms="1033" started-at="2023-07-27T14:04:05Z" finished-at="2023-07-27T14:04:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDisplayAllMenu -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCasesArea.SidebarTC@45afc369]" name="tearDown" is-config="true" duration-ms="0" started-at="2023-07-27T14:04:06Z" finished-at="2023-07-27T14:04:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testCasesArea.ErrandAndWorkflowTC -->
-    </test> <!-- Create Manual Errand -->
+      </class> <!-- testCasesArea.SidebarTC -->
+    </test> <!-- login -->
   </suite> <!-- cention-QA -->
 </testng-results>

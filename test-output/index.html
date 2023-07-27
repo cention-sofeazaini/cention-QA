@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-cention-QA">
-                    <span>C:\Users\Acer\workspace\CloudQATestCases\cention-QA\TestNG2 - Errand And Workflow\testNG.xml</span>
+                    <span>C:\Users\Acer\workspace\CloudQATestCases\cention-QA\TestNG6 - Sidebar\testNG.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -101,10 +101,24 @@
                     <div class="method-list-content failed suite-cention-QA">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-cention-QA" title="testCasesArea.ErrandAndWorkflowTC" hash-for-method="verifyInternalComment_04">verifyInternalComment_04</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-cention-QA" title="testCasesArea.SidebarTC" hash-for-method="verifyCollapseSidebar_01">verifyCollapseSidebar_01</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-cention-QA -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-cention-QA" class="hide-methods passed suite-cention-QA"> (hide)</a> <!-- hide-methods passed suite-cention-QA -->
+                      <a href="#" panel-name="suite-cention-QA" class="show-methods passed suite-cention-QA"> (show)</a> <!-- show-methods passed suite-cention-QA -->
+                    </span>
+                    <div class="method-list-content passed suite-cention-QA">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-cention-QA" title="testCasesArea.SidebarTC" hash-for-method="verifyDisplayAllMenu">verifyDisplayAllMenu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-cention-QA -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -119,45 +133,67 @@
           <div class="suite-cention-QA-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">testCasesArea.ErrandAndWorkflowTC</span>
+              <span class="class-name">testCasesArea.SidebarTC</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyInternalComment_04">
-                  </a> <!-- verifyInternalComment_04 -->
-                  <span class="method-name">verifyInternalComment_04</span>
-                  <div class="stack-trace">org.openqa.selenium.InvalidSelectorException: Compound class names not permitted
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+                  <a name="verifyCollapseSidebar_01">
+                  </a> <!-- verifyCollapseSidebar_01 -->
+                  <span class="method-name">verifyCollapseSidebar_01</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=114.0.5735.248)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_321&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.By$ByClassName.&lt;init&gt;(By.java:308)
-	at org.openqa.selenium.By.className(By.java:99)
-	at org.openqa.selenium.support.How$1.buildBy(How.java:26)
-	at org.openqa.selenium.support.AbstractFindByBuilder.buildByFromLongFindBy(AbstractFindByBuilder.java:78)
-	at org.openqa.selenium.support.FindBy$FindByBuilder.buildIt(FindBy.java:85)
-	at org.openqa.selenium.support.pagefactory.Annotations.buildBy(Annotations.java:82)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.&lt;init&gt;(DefaultElementLocator.java:58)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.&lt;init&gt;(DefaultElementLocator.java:46)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocatorFactory.createLocator(DefaultElementLocatorFactory.java:32)
-	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.decorate(DefaultFieldDecorator.java:55)
-	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:109)
-	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:101)
-	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:88)
-	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:76)
-	at pageFactory.ErrandPage.&lt;init&gt;(ErrandPage.java:534)
-	at testCasesArea.ErrandAndWorkflowTC.verifyInternalComment_04(ErrandAndWorkflowTC.java:74)
-... Removed 24 stack frames
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [80fc974f56bcc797f0c2f72b57544bbd, isElementDisplayed {id=C0FDB01137A573911F3016B8356386A3_element_439}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 114.0.5735.16 (7e1ff058633f..., userDataDir: C:\Users\Acer\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63693}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63693/devtoo..., se:cdpVersion: 114.0.5735.248, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (80fc974f56bcc797f0c2f72b57544bbd)] -&gt; xpath: /html/body/div[1]/div/main/div[2]/div/div/section/div[2]/ul]
+Session ID: 80fc974f56bcc797f0c2f72b57544bbd
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:242)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:298)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy15.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:37)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+	at pageFactory.Sidebar.setDefaultView(Sidebar.java:238)
+	at testCasesArea.SidebarTC.verifyCollapseSidebar_01(SidebarTC.java:29)
+... Removed 32 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-cention-QA-class-failed -->
+          <div class="suite-cention-QA-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCasesArea.SidebarTC</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDisplayAllMenu">
+                  </a> <!-- verifyDisplayAllMenu -->
+                  <span class="method-name">verifyDisplayAllMenu</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-cention-QA-class-passed -->
         </div> <!-- panel cention-QA -->
         <div panel-name="test-xml-cention-QA" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Acer\workspace\CloudQATestCases\cention-QA\TestNG2 - Errand And Workflow\testNG.xml</span>
+            <span class="header-content">C:\Users\Acer\workspace\CloudQATestCases\cention-QA\TestNG6 - Sidebar\testNG.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -167,16 +203,17 @@ Driver info: driver.version: unknown
   &lt;listeners&gt;
     &lt;listener class-name=&quot;base.Listeners&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test name=&quot;Create Manual Errand&quot;&gt;
+  &lt;test name=&quot;login&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testCasesArea.ErrandAndWorkflowTC&quot;&gt;
+      &lt;class name=&quot;testCasesArea.SidebarTC&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;verifyInternalComment_04&quot;/&gt;
+          &lt;include name=&quot;verifyCollapseSidebar_01&quot;/&gt;
+          &lt;include name=&quot;verifyDisplayAllMenu&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- testCasesArea.ErrandAndWorkflowTC --&gt;
+      &lt;/class&gt; &lt;!-- testCasesArea.SidebarTC --&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Create Manual Errand --&gt;
+  &lt;/test&gt; &lt;!-- login --&gt;
 &lt;/suite&gt; &lt;!-- cention-QA --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -188,7 +225,7 @@ Driver info: driver.version: unknown
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Create Manual Errand (1 class)</span>
+                <span class="test-name">login (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -214,16 +251,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyInternalComment_04')
-data.setCell(0, 2, 'testCasesArea.ErrandAndWorkflowTC')
-data.setCell(0, 3, 29);
+data.setCell(0, 1, 'verifyCollapseSidebar_01')
+data.setCell(0, 2, 'testCasesArea.SidebarTC')
+data.setCell(0, 3, 1627);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyDisplayAllMenu')
+data.setCell(1, 2, 'testCasesArea.SidebarTC')
+data.setCell(1, 3, 1033);
 window.suiteTableData['cention-QA']= { tableData: data, tableDiv: 'times-div-cention-QA'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 29 ms</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-cention-QA">
               </div> <!-- times-div-cention-QA -->
             </div> <!-- times-div -->
@@ -238,20 +279,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-cention-QA" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">3 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">testCasesArea.ErrandAndWorkflowTC</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyAllComponentsInManualErrandPage_01</span>
-                <br/>
-                <span class="ignored-method-name">verifySendManualErrand_03</span>
-                <br/>
-                <span class="ignored-method-name">verifyCreateManualErrand_02</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-cention-QA" class="panel">
@@ -260,24 +290,28 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testCasesArea.ErrandAndWorkflowTC</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testCasesArea.SidebarTC</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">Base(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">loginToApplication</span>
-                <span class="method-start">3520 ms</span>
+                <span class="method-start">4097 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">verifyInternalComment_04</span>
-                <span class="method-start">7443 ms</span>
+                <span class="method-name">verifyCollapseSidebar_01</span>
+                <span class="method-start">7994 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyDisplayAllMenu</span>
+                <span class="method-start">9973 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">7915 ms</span>
+                <span class="method-start">11006 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

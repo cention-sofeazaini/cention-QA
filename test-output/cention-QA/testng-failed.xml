@@ -5,17 +5,17 @@
   <listeners>
     <listener class-name="base.Listeners"/>
   </listeners>
-  <test name="Create Manual Errand(failed)">
+  <test name="login(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCasesArea.ErrandAndWorkflowTC">
+      <class name="testCasesArea.SidebarTC">
         <methods>
-          <include name="verifyInternalComment_04"/>
           <include name="tearDown"/>
           <include name="Base"/>
           <include name="loginToApplication"/>
+          <include name="verifyCollapseSidebar_01"/>
         </methods>
-      </class> <!-- testCasesArea.ErrandAndWorkflowTC -->
+      </class> <!-- testCasesArea.SidebarTC -->
     </classes>
-  </test> <!-- Create Manual Errand(failed) -->
+  </test> <!-- login(failed) -->
 </suite> <!-- Failed suite [cention-QA] -->

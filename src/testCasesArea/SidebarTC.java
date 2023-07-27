@@ -43,5 +43,5 @@ public class SidebarTC extends BaseSetup {
 		Assert.assertEquals(objSidebar.displayAdminMenu(), true);
 	}
 	
-
+ 
 }
