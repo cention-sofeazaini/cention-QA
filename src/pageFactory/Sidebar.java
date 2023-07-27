@@ -14,6 +14,17 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class Sidebar {
 
 WebDriver driver;
+
+
+	
+	@FindBy(xpath="/html/body/div[1]/div/main/div[2]/div/div/section/div[2]/ul")
+	WebElement gridBoxErrand;
+
+	@FindBy(how = How.CSS, using = "[data-qa-id='QA_toggle_sidebar_top']")
+	WebElement collapseButton;
+	
+	@FindBy(xpath="/html/body/div[1]/div/main/div[2]/div/div/section/div[1]/div[2]/div/div[1]/button")
+	WebElement expandButton;
 	
 	@FindBy(how = How.CSS, using = "div.sidebar-nav-select:nth-child(2) > div:nth-child(1) > div:nth-child(1)")
 	WebElement errandsDropDown;
@@ -132,6 +143,33 @@ WebDriver driver;
 	@FindBy(how = How.XPATH, using = "//span[contains(.,'Pick-up next')]")
 	WebElement pickUpNext;
 	
+	@FindBy(xpath="html/body/div[1]/div/main/div[2]/div/div/section/div[1]/div[2]/div/div[2]")
+	WebElement notificationMenuSideBar;
+	
+	@FindBy(xpath="/html/body/div[1]/div/main/div[2]/div/div/section/div[1]/div[2]/div/div[3]")
+	WebElement errandsMenuSideBar;
+	
+	@FindBy(xpath="/html/body/div[1]/div/main/div[2]/div/div/section/div[1]/div[2]/div/div[4]/ul/div")
+	WebElement searchMenuSideBar;
+	
+	@FindBy(how = How.CSS, using = "[data-qa-id='collapse-mm-searchanswers']")
+	WebElement searchAnswerSideBar;
+	
+	@FindBy(xpath="/html/body/div[1]/div/main/div[2]/div/div/section/div[1]/div[2]/div/div[4]/ul/li[3]")
+	WebElement statisticMenuSideBar;
+	
+	@FindBy(xpath="/html/body/div[1]/div/main/div[2]/div/div/section/div[1]/div[2]/div/div[4]/ul/li[4]")
+	WebElement liveReportMenuSideBar;
+	
+	@FindBy(how = How.CSS, using = "[data-qa-id='collapse-mm-exports']")
+	WebElement exportMenuSideBar;
+	
+	@FindBy(xpath="	/html/body/div[1]/div/main/div[2]/div/div/section/div[1]/div[2]/div/div[4]/ul/li[6]")
+	WebElement adminMenuSideBar;
+
+	@FindBy(how = How.CSS, using = "[data-qa-id='QA_reload_list']")
+	WebElement reloadButton;
+	
 	
 	/* Methods */
 	public Sidebar(WebDriver driver)
@@ -147,4 +185,61 @@ WebDriver driver;
 		new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOf(this.allErrandsMenu)).click();
 		//new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOf(this.createButton)).click();	
 	}
+	
+	public boolean clickCollapseButton() {
+		
+		System.out.println("Click Collapse Button");
+		new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOf(this.collapseButton)).click();
+		Boolean actual = new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOf(this.gridBoxErrand)).isDisplayed();
+		return actual;	
+	}
+	
+	public void displayNotificationMenu(){
+		new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOf(this.notificationMenuSideBar)).click();
+			
+	}
+	
+	public void displayErrandsMenu(){
+		new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOf(this.errandsMenuSideBar)).click();
+			
+	}
+	
+	public void displaySearchMenu(){
+		new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOf(this.searchMenuSideBar)).click();
+			
+	}
+	
+	public void displaySearchAnswerMenu(){
+		new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOf(this.searchAnswerSideBar)).isDisplayed();
+			
+	}
+	
+	public void displayStatisticMenu(){
+		new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOf(this.statisticMenuSideBar)).isDisplayed();
+			
+	}
+	
+	public void displayLiveReportMenu(){
+		new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOf(this.liveReportMenuSideBar)).isDisplayed();
+			
+	}
+	
+	public void displayExportMenu(){
+		new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOf(this.exportMenuSideBar)).isDisplayed();
+			
+	}
+	
+	public boolean displayAdminMenu(){
+		boolean actual = new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOf(this.adminMenuSideBar)).isDisplayed();
+		return actual;
+	}
+	
+	public void setDefaultView(){
+		Boolean actual = new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOf(this.gridBoxErrand)).isDisplayed();
+		if(actual == true){
+			new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOf(this.expandButton)).click();
+		}
+		new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOf(this.reloadButton)).click();
+	}
+	
 }
