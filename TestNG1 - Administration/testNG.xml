@@ -12,6 +12,8 @@
 		<class name="testCasesArea.AdministrationTC">
 			<methods>
 				<include name="verifyAccountsPage_01"/>
+				<include name="verifyCreateNewEmail_02"/>
+				
 			</methods>
 		</class>
 	</classes>

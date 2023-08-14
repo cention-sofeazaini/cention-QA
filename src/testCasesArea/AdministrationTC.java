@@ -25,4 +25,16 @@ public class AdministrationTC extends BaseSetup{
 		account.clickAccountMenu();
 		Assert.assertEquals(account.verifyAccountPage(), "Accounts");
 	}
+	
+	@Test
+	public void verifyCreateNewEmail_02(){
+		Accounts account = new Accounts(driver);
+		account.clickCreateNewAccount();
+		account.selectArea();
+		account.enterName("Email QA");
+		account.enterServer("mail.cust.cention.se");
+		account.enterUsername("fitriAutomationQA");
+		account.enterPassword("Pass1234");
+		Assert.assertEquals(account.verifyCreateNewEmailAcc(), true); // need code revise
+	}
 }

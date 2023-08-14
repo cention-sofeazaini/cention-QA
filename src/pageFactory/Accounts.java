@@ -36,6 +36,34 @@ public class Accounts {
 	@FindBy(how = How.XPATH, using="/html/body/div[1]/div/main/div[2]/div/div/section/div[2]/div[2]/div/div[1]/h2")
 	WebElement AccounTitle;
 	
+	@FindBy(how = How.CSS, using="[data-qa-id='table-btn-Create New']")
+	WebElement newButton;
+	
+	@FindBy(how = How.CSS, using="[data-qa-id='custom-field area']")
+	WebElement areaField;
+	
+	@FindBy(how = How.CSS, using="[data-qa-id='dd-one-itemE Area E']")
+	WebElement areaItem1;
+	
+	@FindBy(how = How.CSS, using="[data-qa-id='text-field-input-name']")
+	WebElement nameField;
+	
+	@FindBy(how = How.CSS, using="[data-qa-id='text-field-input-host']")
+	WebElement serverField;
+	
+	@FindBy(how = How.CSS, using="[data-qa-id='text-field-input-username']")
+	WebElement usernameField;
+	
+	@FindBy(how = How.CSS, using="[data-qa-id='text-field-input-password']")
+	WebElement passField;
+	
+	@FindBy(how = How.CSS, using="[data-qa-id='btn-Save']")
+	WebElement saveButton;
+	
+	@FindBy(how = How.XPATH, using="/html/body/div[1]/div/main/div[2]/div/div/section/div[2]/div[2]/div/div[2]/div[2]/div/div/div/div[1]/div[2]/table/tbody/tr[8]/td[5]")
+	WebElement emailAccCreated;
+	
+	
 	
 	public void clickAccountMenu(){
 		new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOf(this.MainMenu)).click();
@@ -43,9 +71,51 @@ public class Accounts {
 		new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOf(this.OrganizationMenu)).click();
 		new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOf(this.AccountsMenu)).click();
 	}
+
+	
+	public void clickCreateNewAccount(){
+		new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOf(this.newButton)).click();
+	}
+	
+	public void selectArea(){
+		new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOf(this.areaField)).click();
+		new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOf(this.areaItem1)).click();
+	}
+	
+	public String enterName(String name){
+	     new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOf(this.nameField)).sendKeys(name);
+		return name;
+	}
+	
+	public String enterServer(String server){
+	     new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOf(this.serverField)).sendKeys(server);
+		return server;
+	}
+	
+	public String enterUsername(String username){
+	     new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOf(this.usernameField)).sendKeys(username);
+		return username;
+	}
+	
+	public String enterPassword(String pass){
+	     new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOf(this.passField)).sendKeys(pass);
+		return pass;
+	}
+	
 	
 	public String verifyAccountPage(){
 		String actual = new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOf(this.AccounTitle)).getText();
 		return actual;
+	}
+	
+	public boolean verifyCreateNewEmailAcc(){
+		new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOf(this.saveButton)).click();
+		//Thread.sleep(2000);
+		String actual = new WebDriverWait(driver, Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOf(this.emailAccCreated)).getText();
+		if(actual == "Email QA"){
+			return true;
+		}
+		return false;
+		
 	}
 }
