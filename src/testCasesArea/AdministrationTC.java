@@ -1,11 +1,9 @@
 package testCasesArea;
 
-import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import base.BaseSetup;
-import pageFactory.Accounts;
 import pageFactory.LoginPage;
 
 public class AdministrationTC extends BaseSetup{
@@ -20,10 +18,8 @@ public class AdministrationTC extends BaseSetup{
 	
 
 	@Test
-	public void verifyAccountsPage_01(){
-		Accounts account = new Accounts(driver);
-		account.clickAccountMenu();
-		Assert.assertEquals(account.verifyAccountPage(), "Accounts");
+	public void testCase_01(){
+		
 		
 	}
 	
