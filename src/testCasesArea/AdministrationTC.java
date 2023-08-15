@@ -35,6 +35,6 @@ public class AdministrationTC extends BaseSetup{
 		account.enterServer("mail.cust.cention.se");
 		account.enterUsername("fitriAutomationQA");
 		account.enterPassword("Pass1234");
-		Assert.assertEquals(account.verifyCreateNewEmailAcc(), true); // need code revise
+		Assert.assertEquals(account.verifyCreateNewEmailAcc(), true); // need revise code again
 	}
 }
