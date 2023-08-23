@@ -189,6 +189,7 @@ public class LoginPage extends BaseSetup{
 		action.moveToElement(PrefBox).perform();
 		new WebDriverWait(driver, Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOf(this.qr2faoption)).click();
 		new WebDriverWait(driver, Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOf(this.selectYes)).click();
+		//Codes for checking QR Code exist
 			
 	}
 	

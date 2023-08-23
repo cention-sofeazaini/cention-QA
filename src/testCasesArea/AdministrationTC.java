@@ -24,6 +24,7 @@ public class AdministrationTC extends BaseSetup{
 		Accounts account = new Accounts(driver);
 		account.clickAccountMenu();
 		Assert.assertEquals(account.verifyAccountPage(), "Accounts");
+	
 	}
 	
 	@Test
@@ -37,4 +38,25 @@ public class AdministrationTC extends BaseSetup{
 		account.enterPassword("Pass1234");
 		Assert.assertEquals(account.verifyCreateNewEmailAcc(), true); // need revise code again
 	}
+	
+	
+	@Test
+	public void verifyTestEmailAccount_03(){
+		Accounts account = new Accounts(driver);
+		driver.navigate().to("https://cloud-qa.cention.com/ng/v5/admin/accounts");
+		account.clickTestButton();
+		//add assertion
+
+	}
+	
+	@Test
+	public void verifyEditButtonAccount_04(){
+		Accounts account = new Accounts(driver);
+		driver.navigate().to("https://cloud-qa.cention.com/ng/v5/admin/accounts");
+		account.clickEditButton();
+		account.enterFieldName("QA Email Account");
+		account.clickSaveButton();
+		//add assertion
+	}
+	
 }

@@ -63,6 +63,17 @@ public class Accounts {
 	@FindBy(how = How.XPATH, using="/html/body/div[1]/div/main/div[2]/div/div/section/div[2]/div[2]/div/div[2]/div[2]/div/div/div/div[1]/div[2]/table/tbody/tr[8]/td[5]")
 	WebElement emailAccCreated;
 	
+	@FindBy(how = How.XPATH, using="/html/body/div[1]/div/div/main/div[2]/div/div/section/div[2]/div[2]/div/div[2]/div[2]/div/div/div/div[1]/div[2]/table/tbody/tr[4]/td[8]")
+	WebElement testButton;
+	
+	@FindBy(how = How.XPATH, using="/html/body/div[1]/div/div/main/div[3]/div/div/section/div[2]/div[2]/div/div[2]/div[2]/div/div/div/div[1]/div[2]/table/tbody/tr[1]/td[9]/div/span[1]/button")
+	WebElement editButton;
+	
+	@FindBy(how = How.CSS, using="[data-qa-id='text-field-input-name']")
+	WebElement fieldName;
+	
+	
+	
 	
 	
 	public void clickAccountMenu(){
@@ -118,4 +129,22 @@ public class Accounts {
 		return false;
 		
 	}
+	
+	public void clickTestButton(){
+		new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOf(this.testButton)).click();
+	}
+	
+	public void clickEditButton(){
+		new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOf(this.editButton)).click();
+	}
+	
+	public String enterFieldName(String name){
+		new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOf(this.fieldName)).sendKeys();
+		return name;
+	}
+	public void clickSaveButton(){
+		new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOf(this.saveButton)).click();
+	}
+	
+	
 }
