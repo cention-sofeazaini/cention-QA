@@ -20,12 +20,11 @@ public class Accounts {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(how = How.XPATH, using="/html/body/div[1]/div/main/div[2]/div/div/section/div[1]/div[2]/div/div/div/div/div[1]")
-	WebElement MainMenu;
+	@FindBy(how = How.XPATH, using="//*[@id='page-wrapper']/section/div[1]/div[2]/div/div/div/div/div[1]/div[2]/div")
+	WebElement mainMenu;
 	
 	@FindBy(how = How.CSS, using="[data-qa-id='menu_with_subAdministration']")
 	WebElement AdministrationMenu;
-	
 	
 	@FindBy(how = How.CSS, using="[data-qa-id='menu_with_subOrganizations']")
 	WebElement OrganizationMenu;
@@ -77,7 +76,7 @@ public class Accounts {
 	
 	
 	public void clickAccountMenu(){
-		new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOf(this.MainMenu)).click();
+		new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOf(this.mainMenu)).click();
 		new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOf(this.AdministrationMenu)).click();
 		new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOf(this.OrganizationMenu)).click();
 		new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOf(this.AccountsMenu)).click();
@@ -138,9 +137,9 @@ public class Accounts {
 		new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOf(this.editButton)).click();
 	}
 	
-	public String enterFieldName(String name){
+	public void enterFieldName(String name){
 		new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOf(this.fieldName)).sendKeys();
-		return name;
+	
 	}
 	public void clickSaveButton(){
 		new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOf(this.saveButton)).click();

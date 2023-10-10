@@ -5,17 +5,18 @@
   <listeners>
     <listener class-name="base.Listeners"/>
   </listeners>
-  <test name="Administration(failed)">
+  <test name="login(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCasesArea.AdministrationTC">
+      <class name="testCasesArea.LoginTC">
         <methods>
-          <include name="tearDown"/>
-          <include name="Base"/>
           <include name="loginToApplication"/>
-          <include name="verifyTestEmailAccount_03"/>
+          <include name="tearDown"/>
+          <include name="VerifyQR2FA_02"/>
+          <include name="Base"/>
+          <include name="VerifyLogout_03"/>
         </methods>
-      </class> <!-- testCasesArea.AdministrationTC -->
+      </class> <!-- testCasesArea.LoginTC -->
     </classes>
-  </test> <!-- Administration(failed) -->
+  </test> <!-- login(failed) -->
 </suite> <!-- Failed suite [cention-QA] -->

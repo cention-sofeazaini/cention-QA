@@ -44,7 +44,7 @@ public class LoginPage extends BaseSetup{
 	WebElement lockErrorMessage;
 	
 	//@FindBy(css="[data-qa-id='QA_headerUserProfile']")
-	@FindBy(xpath="/html/body/div[1]/div/main/div[2]/div/div/section/div[1]/div[2]/ul/ul[1]/div[3]")
+	@FindBy(xpath="/html/body/div[1]/div/div/main/div[2]/div/div/section/div[1]/div[2]/ul/ul[1]/div[3]")
 	WebElement userProfile;
 	
 	@FindBy(how = How.ID, using = "workspace")
@@ -68,6 +68,8 @@ public class LoginPage extends BaseSetup{
 	@FindBy(how = How.CSS, using="[data-qa-id='btn-Save']")
 	WebElement buttonSave;
 	
+	@FindBy(xpath="/html/body/div[1]/div/div/div[4]/div/div[2]")
+	WebElement exit;
 	
 	
 	public LoginPage(WebDriver driver)
@@ -200,5 +202,9 @@ public class LoginPage extends BaseSetup{
         js.executeScript("window.scrollBy(0, 300);");
         new WebDriverWait(driver, Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOf(this.buttonSave)).click();
                
+	}
+	
+	public void exitPrefPage(){
+		 new WebDriverWait(driver, Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOf(this.exit)).click();
 	}
 }

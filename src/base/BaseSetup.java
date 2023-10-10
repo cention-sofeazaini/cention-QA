@@ -44,7 +44,7 @@ public class BaseSetup {
 		
 		else if(browser.equalsIgnoreCase("chrome")){
 				
-				System.setProperty("webdriver.chrome.driver","C:\\chromedriver_win32/chromedriver.exe");
+				System.setProperty("webdriver.chrome.driver","C:\\chromedriver-win32/chromedriver.exe");
 				driver =new ChromeDriver();
 				//driver.get("https://cloud-qa.cention.com/ng/v5");		
 				//DesiredCapabilities cap=DesiredCapabilities.chrome();

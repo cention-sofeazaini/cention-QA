@@ -9,15 +9,7 @@
 <test name="Administration">
 <parameter name="browser" value="chrome"/>
 	<classes>
-		<class name="testCasesArea.AdministrationTC">
-			<methods>
-				<!-- <include name="verifyAccountsPage_01"/> -->
-				<!-- <include name="verifyCreateNewEmail_02"/> -->
-				
-				<include name="verifyEditButtonAccount_04"/>	
-				
-			</methods>
-		</class>
+		<class name="testCasesArea.AdministrationTC"/>
 	</classes>
 </test>
 </suite>

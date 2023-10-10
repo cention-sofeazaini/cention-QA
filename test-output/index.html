@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-cention-QA">
-                    <span>C:\Users\Acer\workspace\CloudQATestCases\cention-QA\TestNG1 - Administration\testNG.xml</span>
+                    <span>C:\Users\Acer\workspace\CloudQATestCases\cention-QA\TestNG4 - Login\testNG.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,7 +101,17 @@
                     <div class="method-list-content passed suite-cention-QA">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-cention-QA" title="testCasesArea.AdministrationTC" hash-for-method="verifyEditButtonAccount_04">verifyEditButtonAccount_04</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-cention-QA" title="testCasesArea.LoginTC" hash-for-method="VerifyLogout_03">VerifyLogout_03</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-cention-QA" title="testCasesArea.LoginTC" hash-for-method="VerifyQR2FA_02">VerifyQR2FA_02</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-cention-QA" title="testCasesArea.LoginTC" hash-for-method="loginToApplication">loginToApplication</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-cention-QA -->
@@ -119,14 +129,28 @@
           <div class="suite-cention-QA-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testCasesArea.AdministrationTC</span>
+              <span class="class-name">testCasesArea.LoginTC</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyEditButtonAccount_04">
-                  </a> <!-- verifyEditButtonAccount_04 -->
-                  <span class="method-name">verifyEditButtonAccount_04</span>
+                  <a name="VerifyLogout_03">
+                  </a> <!-- VerifyLogout_03 -->
+                  <span class="method-name">VerifyLogout_03</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyQR2FA_02">
+                  </a> <!-- VerifyQR2FA_02 -->
+                  <span class="method-name">VerifyQR2FA_02</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginToApplication">
+                  </a> <!-- loginToApplication -->
+                  <span class="method-name">loginToApplication</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -134,7 +158,7 @@
         </div> <!-- panel cention-QA -->
         <div panel-name="test-xml-cention-QA" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Acer\workspace\CloudQATestCases\cention-QA\TestNG1 - Administration\testNG.xml</span>
+            <span class="header-content">C:\Users\Acer\workspace\CloudQATestCases\cention-QA\TestNG4 - Login\testNG.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -144,16 +168,18 @@
   &lt;listeners&gt;
     &lt;listener class-name=&quot;base.Listeners&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test name=&quot;Administration&quot;&gt;
+  &lt;test name=&quot;login&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testCasesArea.AdministrationTC&quot;&gt;
+      &lt;class name=&quot;testCasesArea.LoginTC&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;verifyEditButtonAccount_04&quot;/&gt;
+          &lt;include name=&quot;loginToApplication&quot;/&gt;
+          &lt;include name=&quot;VerifyQR2FA_02&quot;/&gt;
+          &lt;include name=&quot;VerifyLogout_03&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- testCasesArea.AdministrationTC --&gt;
+      &lt;/class&gt; &lt;!-- testCasesArea.LoginTC --&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Administration --&gt;
+  &lt;/test&gt; &lt;!-- login --&gt;
 &lt;/suite&gt; &lt;!-- cention-QA --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -165,7 +191,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Administration (1 class)</span>
+                <span class="test-name">login (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -191,16 +217,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyEditButtonAccount_04')
-data.setCell(0, 2, 'testCasesArea.AdministrationTC')
-data.setCell(0, 3, 2892);
+data.setCell(0, 1, 'VerifyQR2FA_02')
+data.setCell(0, 2, 'testCasesArea.LoginTC')
+data.setCell(0, 3, 18941);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'loginToApplication')
+data.setCell(1, 2, 'testCasesArea.LoginTC')
+data.setCell(1, 3, 3173);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'VerifyLogout_03')
+data.setCell(2, 2, 'testCasesArea.LoginTC')
+data.setCell(2, 3, 2076);
 window.suiteTableData['cention-QA']= { tableData: data, tableDiv: 'times-div-cention-QA'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 24 seconds</span>
               <div id="times-div-cention-QA">
               </div> <!-- times-div-cention-QA -->
             </div> <!-- times-div -->
@@ -215,20 +249,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-cention-QA" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">3 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">testCasesArea.AdministrationTC</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyCreateNewEmail_02</span>
-                <br/>
-                <span class="ignored-method-name">verifyTestEmailAccount_03</span>
-                <br/>
-                <span class="ignored-method-name">verifyAccountsPage_01</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-cention-QA" class="panel">
@@ -237,22 +260,26 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testCasesArea.AdministrationTC</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testCasesArea.LoginTC</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">Base(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
-              <div class="configuration-class before">
-                <span class="method-name">loginToApplication</span>
-                <span class="method-start">2692 ms</span>
-              </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">verifyEditButtonAccount_04</span>
-                <span class="method-start">4838 ms</span>
+                <span class="method-name">loginToApplication</span>
+                <span class="method-start">3456 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">VerifyQR2FA_02</span>
+                <span class="method-start">6629 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">VerifyLogout_03</span>
+                <span class="method-start">25571 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">7731 ms</span>
+                <span class="method-start">27648 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -22,7 +22,7 @@ public class ErrandAndWorkflowTC extends BaseSetup{
 		{
 			//Log in to application
 			LoginPage objLogin = new LoginPage(driver);
-			objLogin.loginToApplication("tobias","fitri","123456789");			
+			objLogin.loginToApplication("tobias","fitri2","987654321");			
 		}
 		
 		@Test
