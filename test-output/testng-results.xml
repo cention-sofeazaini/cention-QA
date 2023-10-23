@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="cention-QA" duration-ms="27654" started-at="2023-09-13T06:43:35Z" finished-at="2023-09-13T06:44:03Z">
+  <suite name="cention-QA" duration-ms="17208" started-at="2023-10-23T02:25:04Z" finished-at="2023-10-23T02:25:21Z">
     <groups>
     </groups>
-    <test name="login" duration-ms="27654" started-at="2023-09-13T06:43:35Z" finished-at="2023-09-13T06:44:03Z">
-      <class name="testCasesArea.LoginTC">
-        <test-method status="PASS" signature="Base(java.lang.String)[pri:0, instance:testCasesArea.LoginTC@45afc369]" name="Base" is-config="true" duration-ms="3455" started-at="2023-09-13T14:43:35Z" finished-at="2023-09-13T14:43:38Z">
+    <test name="Administration" duration-ms="17208" started-at="2023-10-23T02:25:04Z" finished-at="2023-10-23T02:25:21Z">
+      <class name="testCasesArea.AdministrationTC">
+        <test-method status="PASS" signature="Base(java.lang.String)[pri:0, instance:testCasesArea.AdministrationTC@679b62af]" name="Base" is-config="true" duration-ms="2387" started-at="2023-10-23T10:25:04Z" finished-at="2023-10-23T10:25:07Z">
           <params>
             <param index="0">
               <value>
@@ -18,23 +18,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Base -->
-        <test-method status="PASS" signature="loginToApplication()[pri:0, instance:testCasesArea.LoginTC@45afc369]" name="loginToApplication" duration-ms="3173" started-at="2023-09-13T14:43:38Z" finished-at="2023-09-13T14:43:41Z">
+        <test-method status="PASS" signature="loginToApplication()[pri:0, instance:testCasesArea.AdministrationTC@679b62af]" name="loginToApplication" is-config="true" duration-ms="2241" started-at="2023-10-23T10:25:07Z" finished-at="2023-10-23T10:25:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApplication -->
-        <test-method status="PASS" signature="VerifyQR2FA_02()[pri:0, instance:testCasesArea.LoginTC@45afc369]" name="VerifyQR2FA_02" duration-ms="18941" started-at="2023-09-13T14:43:41Z" finished-at="2023-09-13T14:44:00Z">
+        <test-method status="PASS" signature="verifyDeleteCORSWhitelist_15()[pri:0, instance:testCasesArea.AdministrationTC@679b62af]" name="verifyDeleteCORSWhitelist_15" duration-ms="12572" started-at="2023-10-23T10:25:09Z" finished-at="2023-10-23T10:25:21Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyQR2FA_02 -->
-        <test-method status="PASS" signature="VerifyLogout_03()[pri:0, instance:testCasesArea.LoginTC@45afc369]" name="VerifyLogout_03" duration-ms="2076" started-at="2023-09-13T14:44:00Z" finished-at="2023-09-13T14:44:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyLogout_03 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCasesArea.LoginTC@45afc369]" name="tearDown" is-config="true" duration-ms="1" started-at="2023-09-13T14:44:03Z" finished-at="2023-09-13T14:44:03Z">
+        </test-method> <!-- verifyDeleteCORSWhitelist_15 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCasesArea.AdministrationTC@679b62af]" name="tearDown" is-config="true" duration-ms="1" started-at="2023-10-23T10:25:21Z" finished-at="2023-10-23T10:25:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testCasesArea.LoginTC -->
-    </test> <!-- login -->
+      </class> <!-- testCasesArea.AdministrationTC -->
+    </test> <!-- Administration -->
   </suite> <!-- cention-QA -->
 </testng-results>
