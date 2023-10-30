@@ -1,15 +1,21 @@
 package testCasesArea;
 
+import java.time.Duration;
+
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import base.BaseSetup;
+import pageFactory.APIaccessTokenPage;
 import pageFactory.Accounts;
 import pageFactory.CORSpage;
 import pageFactory.ContactCard;
 import pageFactory.GroupPage;
 import pageFactory.LoginPage;
+import pageFactory.IPAddressBlacklistPage;
 
 public class AdministrationTC extends BaseSetup{
 	
@@ -17,6 +23,9 @@ public class AdministrationTC extends BaseSetup{
 	String ContCardPage = "https://cloud-qa.cention.com/ng/v5/admin/contactcards";
 	String GroupPage = "https://cloud-qa.cention.com/ng/v5/admin/groups";
 	String WhiteListPage = "https://cloud-qa.cention.com/ng/v5/admin/cors";
+	String IPAddressBlacklistPage = "https://cloud-qa.cention.com/ng/v5/admin/blacklist";
+	String APIaccessTokens = "https://cloud-qa.cention.com/ng/v5/admin/jwt";
+	
 
 	
 	@BeforeClass
@@ -126,7 +135,7 @@ public class AdministrationTC extends BaseSetup{
 		
  	}
     
-    @Test(priority = 0)
+    //@Test(priority = 0) = PASS
     public void verifyCORSWhitelistPage_13(){
     	CORSpage cors = new CORSpage(driver);
     	driver.navigate().to(WhiteListPage);
@@ -134,7 +143,7 @@ public class AdministrationTC extends BaseSetup{
     	
    	}
     
-   @Test(priority = 1)
+   //@Test(priority = 1) = PASS
     public void verifyAddNewCORSWhitelist_14(){
     	CORSpage cors = new CORSpage(driver);
     	driver.navigate().to(WhiteListPage);
@@ -143,29 +152,41 @@ public class AdministrationTC extends BaseSetup{
     	cors.clickSaveButton();
    	}
     
-    @Test(priority = 2)
+   // @Test(priority = 2) = PASS
     public void verifyDeleteCORSWhitelist_15(){
        	CORSpage cors = new CORSpage(driver);
     	driver.navigate().to(WhiteListPage);
         cors.deleteCORSdata(); // Delete the 6ixth row from the table.
-        
-    	
    	}
     
-   public void verifyIPAddressPage_16(){
-		
+    //@Test = PASS
+    public void verifyIPAddressPage_16(){
+       IPAddressBlacklistPage ip = new IPAddressBlacklistPage(driver);
+   	   driver.navigate().to(IPAddressBlacklistPage);
+       Assert.assertEquals(ip.verifyIPaddressBlacklistPage(), "IP Address Blacklist");
+	   
    	}
    
    public void verifyDeleteIPAddress_17(){
 		
   	}
    
+   @Test(priority = 0)
    public void verifyAPIAccessTokensPage_18(){
-		
+	   APIaccessTokenPage ip = new APIaccessTokenPage(driver);
+   	   ip.accessTokenPage();
+       Assert.assertEquals(ip.verifyAPIaccessTokenPage(), "Access tokens");
  	}
    
+   @Test(priority = 1)
    public void verifyAddNewAPIAccessTokens_19(){
-		
+	   APIaccessTokenPage ip = new APIaccessTokenPage(driver);
+   	   //driver.navigate().to(APIaccessTokens);
+   	   ip.createNewAccessToken();
+   	   ip.inputName();
+   	   ip.inputKey();
+   	   ip.inputAPI();
+   	   ip.saveButton();
  	}
    
    public void verivyEditAPIAccessTokens_20(){

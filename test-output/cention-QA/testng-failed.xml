@@ -11,9 +11,10 @@
       <class name="testCasesArea.AdministrationTC">
         <methods>
           <include name="tearDown"/>
+          <include name="verifyAPIAccessTokensPage_18"/>
           <include name="Base"/>
           <include name="loginToApplication"/>
-          <include name="verifyDeleteCORSWhitelist_15"/>
+          <include name="verifyAddNewAPIAccessTokens_19"/>
         </methods>
       </class> <!-- testCasesArea.AdministrationTC -->
     </classes>
