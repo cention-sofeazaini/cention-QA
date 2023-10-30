@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 
 import base.BaseSetup;
 import pageFactory.APIaccessTokenPage;
+import pageFactory.APIcallbackPage;
 import pageFactory.Accounts;
 import pageFactory.CORSpage;
 import pageFactory.ContactCard;
@@ -171,14 +172,14 @@ public class AdministrationTC extends BaseSetup{
 		
   	}
    
-   @Test(priority = 0)
+   //@Test = PASS
    public void verifyAPIAccessTokensPage_18(){
 	   APIaccessTokenPage ip = new APIaccessTokenPage(driver);
    	   ip.accessTokenPage();
        Assert.assertEquals(ip.verifyAPIaccessTokenPage(), "Access tokens");
  	}
    
-   @Test(priority = 1)
+   //@Test = PASS
    public void verifyAddNewAPIAccessTokens_19(){
 	   APIaccessTokenPage ip = new APIaccessTokenPage(driver);
    	   //driver.navigate().to(APIaccessTokens);
@@ -189,20 +190,31 @@ public class AdministrationTC extends BaseSetup{
    	   ip.saveButton();
  	}
    
+   //@Test = PENDING (Web element not work)
    public void verivyEditAPIAccessTokens_20(){
-		
+	   APIaccessTokenPage ip = new APIaccessTokenPage(driver);
+	  // ip.editTokens();
+	   ip.saveButton();
  	}
    
+   //@Test = PENDING (Web element not work)
    public void verivyDeleteAPIAccessTokens_21(){
-		
+	   APIaccessTokenPage ip = new APIaccessTokenPage(driver);
+	   ip.deleteTokens();
   	}
    
+   @Test(priority = 0)
    public void verifyAPICallbackPage_22(){
 
+	   APIcallbackPage cb = new APIcallbackPage(driver);
+	   cb.accessCallbackPage();
+       Assert.assertEquals(cb.verifyCallbackPage(), "Callback API");
+	   
 	}
    
+  // @Test(priority = 1)
    public void verifyAddNewAPICallback_23(){
-
+	   APIcallbackPage cb = new APIcallbackPage(driver);
  	}
    
    public void verifyEditAPICallback_24(){
