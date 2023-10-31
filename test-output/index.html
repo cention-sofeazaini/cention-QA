@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,7 +101,12 @@
                     <div class="method-list-content passed suite-cention-QA">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-cention-QA" title="testCasesArea.AdministrationTC" hash-for-method="verifyAPICallbackPage_22">verifyAPICallbackPage_22</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-cention-QA" title="testCasesArea.AdministrationTC" hash-for-method="verifyGroupAgent">verifyGroupAgent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-cention-QA" title="testCasesArea.AdministrationTC" hash-for-method="verifySelectAllAgents">verifySelectAllAgents</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-cention-QA -->
@@ -124,9 +129,16 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyAPICallbackPage_22">
-                  </a> <!-- verifyAPICallbackPage_22 -->
-                  <span class="method-name">verifyAPICallbackPage_22</span>
+                  <a name="verifyGroupAgent">
+                  </a> <!-- verifyGroupAgent -->
+                  <span class="method-name">verifyGroupAgent</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySelectAllAgents">
+                  </a> <!-- verifySelectAllAgents -->
+                  <span class="method-name">verifySelectAllAgents</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -187,16 +199,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyAPICallbackPage_22')
+data.setCell(0, 1, 'verifySelectAllAgents')
 data.setCell(0, 2, 'testCasesArea.AdministrationTC')
-data.setCell(0, 3, 4009);
+data.setCell(0, 3, 4494);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyGroupAgent')
+data.setCell(1, 2, 'testCasesArea.AdministrationTC')
+data.setCell(1, 3, 4297);
 window.suiteTableData['cention-QA']= { tableData: data, tableDiv: 'times-div-cention-QA'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 8 seconds</span>
               <div id="times-div-cention-QA">
               </div> <!-- times-div-cention-QA -->
             </div> <!-- times-div -->
@@ -254,15 +270,19 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">loginToApplication</span>
-                <span class="method-start">2719 ms</span>
+                <span class="method-start">2832 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">verifyAPICallbackPage_22</span>
-                <span class="method-start">5335 ms</span>
+                <span class="method-name">verifyGroupAgent</span>
+                <span class="method-start">4996 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySelectAllAgents</span>
+                <span class="method-start">9293 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">9344 ms</span>
+                <span class="method-start">13788 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

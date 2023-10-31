@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="cention-QA" duration-ms="9349" started-at="2023-10-30T08:14:37Z" finished-at="2023-10-30T08:14:47Z">
+  <suite name="cention-QA" duration-ms="13793" started-at="2023-10-31T05:42:30Z" finished-at="2023-10-31T05:42:43Z">
     <groups>
     </groups>
-    <test name="Administration" duration-ms="9349" started-at="2023-10-30T08:14:37Z" finished-at="2023-10-30T08:14:47Z">
+    <test name="Administration" duration-ms="13793" started-at="2023-10-31T05:42:30Z" finished-at="2023-10-31T05:42:43Z">
       <class name="testCasesArea.AdministrationTC">
-        <test-method status="PASS" signature="Base(java.lang.String)[pri:0, instance:testCasesArea.AdministrationTC@679b62af]" name="Base" is-config="true" duration-ms="2719" started-at="2023-10-30T16:14:37Z" finished-at="2023-10-30T16:14:40Z">
+        <test-method status="PASS" signature="Base(java.lang.String)[pri:0, instance:testCasesArea.AdministrationTC@679b62af]" name="Base" is-config="true" duration-ms="2831" started-at="2023-10-31T13:42:30Z" finished-at="2023-10-31T13:42:32Z">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Base -->
-        <test-method status="PASS" signature="loginToApplication()[pri:0, instance:testCasesArea.AdministrationTC@679b62af]" name="loginToApplication" is-config="true" duration-ms="2615" started-at="2023-10-30T16:14:40Z" finished-at="2023-10-30T16:14:43Z">
+        <test-method status="PASS" signature="loginToApplication()[pri:0, instance:testCasesArea.AdministrationTC@679b62af]" name="loginToApplication" is-config="true" duration-ms="2162" started-at="2023-10-31T13:42:32Z" finished-at="2023-10-31T13:42:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApplication -->
-        <test-method status="PASS" signature="verifyAPICallbackPage_22()[pri:0, instance:testCasesArea.AdministrationTC@679b62af]" name="verifyAPICallbackPage_22" duration-ms="4009" started-at="2023-10-30T16:14:43Z" finished-at="2023-10-30T16:14:47Z">
+        <test-method status="PASS" signature="verifyGroupAgent()[pri:0, instance:testCasesArea.AdministrationTC@679b62af]" name="verifyGroupAgent" duration-ms="4297" started-at="2023-10-31T13:42:35Z" finished-at="2023-10-31T13:42:39Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyAPICallbackPage_22 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCasesArea.AdministrationTC@679b62af]" name="tearDown" is-config="true" duration-ms="0" started-at="2023-10-30T16:14:47Z" finished-at="2023-10-30T16:14:47Z">
+        </test-method> <!-- verifyGroupAgent -->
+        <test-method status="PASS" signature="verifySelectAllAgents()[pri:0, instance:testCasesArea.AdministrationTC@679b62af]" name="verifySelectAllAgents" duration-ms="4494" started-at="2023-10-31T13:42:39Z" finished-at="2023-10-31T13:42:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySelectAllAgents -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCasesArea.AdministrationTC@679b62af]" name="tearDown" is-config="true" duration-ms="0" started-at="2023-10-31T13:42:43Z" finished-at="2023-10-31T13:42:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
