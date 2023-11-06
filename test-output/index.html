@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-cention-QA">
-              <span class="suite-name border-passed">cention-QA</span>
+              <span class="suite-name border-failed">cention-QA</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -90,26 +90,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-cention-QA" class="hide-methods passed suite-cention-QA"> (hide)</a> <!-- hide-methods passed suite-cention-QA -->
-                      <a href="#" panel-name="suite-cention-QA" class="show-methods passed suite-cention-QA"> (show)</a> <!-- show-methods passed suite-cention-QA -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-cention-QA" class="hide-methods failed suite-cention-QA"> (hide)</a> <!-- hide-methods failed suite-cention-QA -->
+                      <a href="#" panel-name="suite-cention-QA" class="show-methods failed suite-cention-QA"> (show)</a> <!-- show-methods failed suite-cention-QA -->
                     </span>
-                    <div class="method-list-content passed suite-cention-QA">
+                    <div class="method-list-content failed suite-cention-QA">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-cention-QA" title="testCasesArea.AdministrationTC" hash-for-method="verifyGroupAgent">verifyGroupAgent</a> <!-- method navigator-link -->
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-cention-QA" title="testCasesArea.AdministrationTC" hash-for-method="verifyDragDropAgentGroup_28">verifyDragDropAgentGroup_28</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-cention-QA" title="testCasesArea.AdministrationTC" hash-for-method="verifySelectAllAgents">verifySelectAllAgents</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-cention-QA -->
+                    </div> <!-- method-list-content failed suite-cention-QA -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -121,28 +116,45 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-cention-QA" class="panel cention-QA">
-          <div class="suite-cention-QA-class-passed">
+          <div class="suite-cention-QA-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">testCasesArea.AdministrationTC</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyGroupAgent">
-                  </a> <!-- verifyGroupAgent -->
-                  <span class="method-name">verifyGroupAgent</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifySelectAllAgents">
-                  </a> <!-- verifySelectAllAgents -->
-                  <span class="method-name">verifySelectAllAgents</span>
+                  <a name="verifyDragDropAgentGroup_28">
+                  </a> <!-- verifyDragDropAgentGroup_28 -->
+                  <span class="method-name">verifyDragDropAgentGroup_28</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;i class=&quot;icon-add&quot; style=&quot;font-size: unset;&quot;&gt;&lt;/i&gt; is not clickable at point (1003, 90). Other element would receive the click: &lt;div class=&quot;modal show&quot; role=&quot;dialog&quot; tabindex=&quot;-1&quot; style=&quot;display: block;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=118.0.5993.71)
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_321&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [299883b6679b3260a7ec55dfcd9d180f, clickElement {id=695790D46BE6301FB1F70C573D2D1B08_element_290}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.71, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Acer\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51853}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51853/devtoo..., se:cdpVersion: 118.0.5993.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (299883b6679b3260a7ec55dfcd9d180f)] -&gt; xpath: /html/body/div[1]/div/div/main/div[3]/div/div/section/div[2]/div[2]/div/div[1]/div[1]/div/div/div[2]/button[2]/i]
+Session ID: 299883b6679b3260a7ec55dfcd9d180f
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:242)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy15.click(Unknown Source)
+	at pageFactory.GroupPage.clickAddButton(GroupPage.java:100)
+	at testCasesArea.AdministrationTC.verifyDragDropAgentGroup_28(AdministrationTC.java:257)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-cention-QA-class-passed -->
+          </div> <!-- suite-cention-QA-class-failed -->
         </div> <!-- panel cention-QA -->
         <div panel-name="test-xml-cention-QA" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -199,20 +211,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifySelectAllAgents')
+data.setCell(0, 1, 'verifyDragDropAgentGroup_28')
 data.setCell(0, 2, 'testCasesArea.AdministrationTC')
-data.setCell(0, 3, 4494);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyGroupAgent')
-data.setCell(1, 2, 'testCasesArea.AdministrationTC')
-data.setCell(1, 3, 4297);
+data.setCell(0, 3, 12194);
 window.suiteTableData['cention-QA']= { tableData: data, tableDiv: 'times-div-cention-QA'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
               <div id="times-div-cention-QA">
               </div> <!-- times-div-cention-QA -->
             </div> <!-- times-div -->
@@ -270,19 +278,17 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">loginToApplication</span>
-                <span class="method-start">2832 ms</span>
+                <span class="method-start">3100 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">verifyGroupAgent</span>
-                <span class="method-start">4996 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifySelectAllAgents</span>
-                <span class="method-start">9293 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyDragDropAgentGroup_28</span>
+                <span class="method-start">6351 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">13788 ms</span>
+                <span class="method-start">19032 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="cention-QA" duration-ms="13793" started-at="2023-10-31T05:42:30Z" finished-at="2023-10-31T05:42:43Z">
+  <suite name="cention-QA" duration-ms="19038" started-at="2023-11-06T07:23:38Z" finished-at="2023-11-06T07:23:57Z">
     <groups>
     </groups>
-    <test name="Administration" duration-ms="13793" started-at="2023-10-31T05:42:30Z" finished-at="2023-10-31T05:42:43Z">
+    <test name="Administration" duration-ms="19038" started-at="2023-11-06T07:23:38Z" finished-at="2023-11-06T07:23:57Z">
       <class name="testCasesArea.AdministrationTC">
-        <test-method status="PASS" signature="Base(java.lang.String)[pri:0, instance:testCasesArea.AdministrationTC@679b62af]" name="Base" is-config="true" duration-ms="2831" started-at="2023-10-31T13:42:30Z" finished-at="2023-10-31T13:42:32Z">
+        <test-method status="PASS" signature="Base(java.lang.String)[pri:0, instance:testCasesArea.AdministrationTC@679b62af]" name="Base" is-config="true" duration-ms="3099" started-at="2023-11-06T15:23:38Z" finished-at="2023-11-06T15:23:41Z">
           <params>
             <param index="0">
               <value>
@@ -18,19 +18,85 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Base -->
-        <test-method status="PASS" signature="loginToApplication()[pri:0, instance:testCasesArea.AdministrationTC@679b62af]" name="loginToApplication" is-config="true" duration-ms="2162" started-at="2023-10-31T13:42:32Z" finished-at="2023-10-31T13:42:35Z">
+        <test-method status="PASS" signature="loginToApplication()[pri:0, instance:testCasesArea.AdministrationTC@679b62af]" name="loginToApplication" is-config="true" duration-ms="3249" started-at="2023-11-06T15:23:41Z" finished-at="2023-11-06T15:23:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApplication -->
-        <test-method status="PASS" signature="verifyGroupAgent()[pri:0, instance:testCasesArea.AdministrationTC@679b62af]" name="verifyGroupAgent" duration-ms="4297" started-at="2023-10-31T13:42:35Z" finished-at="2023-10-31T13:42:39Z">
+        <test-method status="FAIL" signature="verifyDragDropAgentGroup_28()[pri:0, instance:testCasesArea.AdministrationTC@679b62af]" name="verifyDragDropAgentGroup_28" duration-ms="12194" started-at="2023-11-06T15:23:45Z" finished-at="2023-11-06T15:23:57Z">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <i class="icon-add" style="font-size: unset;"></i> is not clickable at point (1003, 90). Other element would receive the click: <div class="modal show" role="dialog" tabindex="-1" style="display: block;">...</div>
+  (Session info: chrome=118.0.5993.71)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [299883b6679b3260a7ec55dfcd9d180f, clickElement {id=695790D46BE6301FB1F70C573D2D1B08_element_290}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.71, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Acer\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51853}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51853/devtoo..., se:cdpVersion: 118.0.5993.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (299883b6679b3260a7ec55dfcd9d180f)] -> xpath: /html/body/div[1]/div/div/main/div[3]/div/div/section/div[2]/div[2]/div/div[1]/div[1]/div/div/div[2]/button[2]/i]
+Session ID: 299883b6679b3260a7ec55dfcd9d180f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <i class="icon-add" style="font-size: unset;"></i> is not clickable at point (1003, 90). Other element would receive the click: <div class="modal show" role="dialog" tabindex="-1" style="display: block;">...</div>
+  (Session info: chrome=118.0.5993.71)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [299883b6679b3260a7ec55dfcd9d180f, clickElement {id=695790D46BE6301FB1F70C573D2D1B08_element_290}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.71, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Acer\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51853}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51853/devtoo..., se:cdpVersion: 118.0.5993.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (299883b6679b3260a7ec55dfcd9d180f)] -> xpath: /html/body/div[1]/div/div/main/div[3]/div/div/section/div[2]/div[2]/div/div[1]/div[1]/div/div/div[2]/button[2]/i]
+Session ID: 299883b6679b3260a7ec55dfcd9d180f
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:242)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy15.click(Unknown Source)
+	at pageFactory.GroupPage.clickAddButton(GroupPage.java:100)
+	at testCasesArea.AdministrationTC.verifyDragDropAgentGroup_28(AdministrationTC.java:257)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:663)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:849)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1157)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1200)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1125)
+	at org.testng.TestNG.run(TestNG.java:1033)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyGroupAgent -->
-        <test-method status="PASS" signature="verifySelectAllAgents()[pri:0, instance:testCasesArea.AdministrationTC@679b62af]" name="verifySelectAllAgents" duration-ms="4494" started-at="2023-10-31T13:42:39Z" finished-at="2023-10-31T13:42:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySelectAllAgents -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCasesArea.AdministrationTC@679b62af]" name="tearDown" is-config="true" duration-ms="0" started-at="2023-10-31T13:42:43Z" finished-at="2023-10-31T13:42:43Z">
+        </test-method> <!-- verifyDragDropAgentGroup_28 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCasesArea.AdministrationTC@679b62af]" name="tearDown" is-config="true" duration-ms="0" started-at="2023-11-06T15:23:57Z" finished-at="2023-11-06T15:23:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
