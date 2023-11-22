@@ -5,7 +5,7 @@
     <classes>
       <class name="testCasesArea.AdministrationTC">
         <methods>
-          <include name="verifyGroupAgent"/>
+          <include name="verifyDragDropAgentGroup_28"/>
         </methods>
       </class> <!-- testCasesArea.AdministrationTC -->
     </classes>

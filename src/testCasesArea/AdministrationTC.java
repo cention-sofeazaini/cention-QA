@@ -34,7 +34,7 @@ public class AdministrationTC extends BaseSetup{
 	{
 		//Log in to application
 		LoginPage objLogin = new LoginPage(driver);
-		objLogin.loginToApplication("tobias","fitri2","987654321");			
+		objLogin.loginToApplication("cention","QAFitri","Cen@123");			
 	}
 	
 
@@ -121,7 +121,8 @@ public class AdministrationTC extends BaseSetup{
 		
 	}
 	
-	@Test(enabled = false)
+
+	@Test(enabled = true) // click on area not working: xpath, css
     public void verifyAddNewGroupPage_10(){
     	GroupPage group = new GroupPage(driver);
     	driver.navigate().to(GroupPage);
@@ -250,7 +251,7 @@ public class AdministrationTC extends BaseSetup{
 	   group.selectMultipleAgents();
    }
    
-   @Test (priority=2)
+   //@Test (priority=1)
    public void verifyDragDropAgentGroup_28(){
 	   GroupPage group = new GroupPage(driver);
 	   driver.navigate().to(GroupPage);
@@ -258,7 +259,7 @@ public class AdministrationTC extends BaseSetup{
 	   group.addAgentsInGroup();
    }
    
-   
+
    public void verifySaveDetailsAgentGroup_29(){
 	   GroupPage group = new GroupPage(driver);
 	   driver.navigate().to(GroupPage);
@@ -266,7 +267,7 @@ public class AdministrationTC extends BaseSetup{
 	   group.enterGroupDetails();
 	   group.addAgentsInGroup();
    }
-   
+
    public void verifyResetSelection_30(){
 	   GroupPage group = new GroupPage(driver);
 	   driver.navigate().to(GroupPage);

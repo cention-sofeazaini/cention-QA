@@ -46,8 +46,11 @@ WebDriver driver;
 	@FindBy(how = How.CSS, using="[data-qa-id='text-field-input-description']")
 	WebElement descriptionField;
 	
-	@FindBy(how = How.CSS, using="[data-qa-id='anchor_undefined']")
+	@FindBy(how = How.CSS, using="[data-qa-id='dd-serialSelect-Select Area']")
 	WebElement areaField;
+	
+	@FindBy(how = How.XPATH, using="//*[@id='adminGroupsEdit']/div[1]/div[3]/div/div[2]/div/div")
+	WebElement areaField2;
 	
 	@FindBy(how = How.XPATH, using="/html/body/div[1]/div/div/main/div[2]/div/div/section/div[2]/div[2]/div/div[2]/div[2]/section/div/div[1]/form/div[1]/div[3]/div/div[2]/div/div/div/div/div/div[3]/div[1]/div/div/div")
 	WebElement area_ABC_Orgz;

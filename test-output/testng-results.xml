@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="cention-QA" duration-ms="19038" started-at="2023-11-06T07:23:38Z" finished-at="2023-11-06T07:23:57Z">
+  <suite name="cention-QA" duration-ms="8245" started-at="2023-11-10T02:57:33Z" finished-at="2023-11-10T02:57:41Z">
     <groups>
     </groups>
-    <test name="Administration" duration-ms="19038" started-at="2023-11-06T07:23:38Z" finished-at="2023-11-06T07:23:57Z">
+    <test name="Administration" duration-ms="8245" started-at="2023-11-10T02:57:33Z" finished-at="2023-11-10T02:57:41Z">
       <class name="testCasesArea.AdministrationTC">
-        <test-method status="PASS" signature="Base(java.lang.String)[pri:0, instance:testCasesArea.AdministrationTC@679b62af]" name="Base" is-config="true" duration-ms="3099" started-at="2023-11-06T15:23:38Z" finished-at="2023-11-06T15:23:41Z">
+        <test-method status="PASS" signature="Base(java.lang.String)[pri:0, instance:testCasesArea.AdministrationTC@679b62af]" name="Base" is-config="true" duration-ms="2183" started-at="2023-11-10T10:57:33Z" finished-at="2023-11-10T10:57:35Z">
           <params>
             <param index="0">
               <value>
@@ -18,33 +18,33 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Base -->
-        <test-method status="PASS" signature="loginToApplication()[pri:0, instance:testCasesArea.AdministrationTC@679b62af]" name="loginToApplication" is-config="true" duration-ms="3249" started-at="2023-11-06T15:23:41Z" finished-at="2023-11-06T15:23:45Z">
+        <test-method status="PASS" signature="loginToApplication()[pri:0, instance:testCasesArea.AdministrationTC@679b62af]" name="loginToApplication" is-config="true" duration-ms="2089" started-at="2023-11-10T10:57:35Z" finished-at="2023-11-10T10:57:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApplication -->
-        <test-method status="FAIL" signature="verifyDragDropAgentGroup_28()[pri:0, instance:testCasesArea.AdministrationTC@679b62af]" name="verifyDragDropAgentGroup_28" duration-ms="12194" started-at="2023-11-06T15:23:45Z" finished-at="2023-11-06T15:23:57Z">
+        <test-method status="FAIL" signature="verifyAddNewGroupPage_10()[pri:0, instance:testCasesArea.AdministrationTC@679b62af]" name="verifyAddNewGroupPage_10" duration-ms="3797" started-at="2023-11-10T10:57:37Z" finished-at="2023-11-10T10:57:41Z">
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[element click intercepted: Element <i class="icon-add" style="font-size: unset;"></i> is not clickable at point (1003, 90). Other element would receive the click: <div class="modal show" role="dialog" tabindex="-1" style="display: block;">...</div>
-  (Session info: chrome=118.0.5993.71)
+              <![CDATA[element click intercepted: Element <div data-qa-id="dd-serialSelect-Select Area" class="c3-dropdown btn-group-sm dropdown">...</div> is not clickable at point (1489, 357). Other element would receive the click: <div class="label undefined">...</div>
+  (Session info: chrome=119.0.6045.106)
 Build info: version: '4.10.0', revision: 'c14d967899'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [299883b6679b3260a7ec55dfcd9d180f, clickElement {id=695790D46BE6301FB1F70C573D2D1B08_element_290}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.71, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Acer\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51853}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51853/devtoo..., se:cdpVersion: 118.0.5993.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (299883b6679b3260a7ec55dfcd9d180f)] -> xpath: /html/body/div[1]/div/div/main/div[3]/div/div/section/div[2]/div[2]/div/div[1]/div[1]/div/div/div[2]/button[2]/i]
-Session ID: 299883b6679b3260a7ec55dfcd9d180f]]>
+Command: [454484b4c68d94b05159ed107ecbe7fd, clickElement {id=B93029A4669CB64610540BACD7E94D85_element_972}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.106, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\Acer\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61281}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61281/devtoo..., se:cdpVersion: 119.0.6045.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (454484b4c68d94b05159ed107ecbe7fd)] -> css selector: [data-qa-id='dd-serialSelect-Select Area']]
+Session ID: 454484b4c68d94b05159ed107ecbe7fd]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <i class="icon-add" style="font-size: unset;"></i> is not clickable at point (1003, 90). Other element would receive the click: <div class="modal show" role="dialog" tabindex="-1" style="display: block;">...</div>
-  (Session info: chrome=118.0.5993.71)
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div data-qa-id="dd-serialSelect-Select Area" class="c3-dropdown btn-group-sm dropdown">...</div> is not clickable at point (1489, 357). Other element would receive the click: <div class="label undefined">...</div>
+  (Session info: chrome=119.0.6045.106)
 Build info: version: '4.10.0', revision: 'c14d967899'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [299883b6679b3260a7ec55dfcd9d180f, clickElement {id=695790D46BE6301FB1F70C573D2D1B08_element_290}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.71, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Acer\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51853}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51853/devtoo..., se:cdpVersion: 118.0.5993.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (299883b6679b3260a7ec55dfcd9d180f)] -> xpath: /html/body/div[1]/div/div/main/div[3]/div/div/section/div[2]/div[2]/div/div[1]/div[1]/div/div/div[2]/button[2]/i]
-Session ID: 299883b6679b3260a7ec55dfcd9d180f
+Command: [454484b4c68d94b05159ed107ecbe7fd, clickElement {id=B93029A4669CB64610540BACD7E94D85_element_972}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.106, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\Acer\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61281}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61281/devtoo..., se:cdpVersion: 119.0.6045.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (454484b4c68d94b05159ed107ecbe7fd)] -> css selector: [data-qa-id='dd-serialSelect-Select Area']]
+Session ID: 454484b4c68d94b05159ed107ecbe7fd
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -64,8 +64,8 @@ Session ID: 299883b6679b3260a7ec55dfcd9d180f
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at com.sun.proxy.$Proxy15.click(Unknown Source)
-	at pageFactory.GroupPage.clickAddButton(GroupPage.java:100)
-	at testCasesArea.AdministrationTC.verifyDragDropAgentGroup_28(AdministrationTC.java:257)
+	at pageFactory.GroupPage.createNewGroup(GroupPage.java:115)
+	at testCasesArea.AdministrationTC.verifyAddNewGroupPage_10(AdministrationTC.java:128)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -95,8 +95,8 @@ Session ID: 299883b6679b3260a7ec55dfcd9d180f
           </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyDragDropAgentGroup_28 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCasesArea.AdministrationTC@679b62af]" name="tearDown" is-config="true" duration-ms="0" started-at="2023-11-06T15:23:57Z" finished-at="2023-11-06T15:23:57Z">
+        </test-method> <!-- verifyAddNewGroupPage_10 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCasesArea.AdministrationTC@679b62af]" name="tearDown" is-config="true" duration-ms="0" started-at="2023-11-10T10:57:41Z" finished-at="2023-11-10T10:57:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

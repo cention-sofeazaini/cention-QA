@@ -13,7 +13,7 @@
           <include name="tearDown"/>
           <include name="Base"/>
           <include name="loginToApplication"/>
-          <include name="verifyDragDropAgentGroup_28"/>
+          <include name="verifyAddNewGroupPage_10"/>
         </methods>
       </class> <!-- testCasesArea.AdministrationTC -->
     </classes>
