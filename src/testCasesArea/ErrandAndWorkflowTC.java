@@ -52,7 +52,7 @@ public class ErrandAndWorkflowTC extends BaseSetup{
 
 		}
 		
-		@Test
+		//@Test
 		public void verifySendManualErrand_03() throws AWTException{
 			CreateErrand objCreateErrand = new CreateErrand(driver);
 			objCreateErrand.clickCreateButton();

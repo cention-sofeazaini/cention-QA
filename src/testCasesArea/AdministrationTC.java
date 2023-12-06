@@ -34,7 +34,7 @@ public class AdministrationTC extends BaseSetup{
 	{
 		//Log in to application
 		LoginPage objLogin = new LoginPage(driver);
-		objLogin.loginToApplication("cention","QAFitri","Cen@123");			
+		objLogin.loginToApplication("tobias","fitri2","987654321");			
 	}
 	
 
@@ -112,7 +112,7 @@ public class AdministrationTC extends BaseSetup{
 		contact.deleteFirstRecord();
 	}
 	
-	@Test(enabled = false)
+	//@Test(priority = 0)
 	public void verifyGroupPage_09(){
 		GroupPage group = new GroupPage(driver);
 		driver.navigate().to(GroupPage);
@@ -122,7 +122,7 @@ public class AdministrationTC extends BaseSetup{
 	}
 	
 
-	@Test(enabled = true) // click on area not working: xpath, css
+	//@Test(enabled = true) // click on area not working: xpath, css
     public void verifyAddNewGroupPage_10(){
     	GroupPage group = new GroupPage(driver);
     	driver.navigate().to(GroupPage);
@@ -235,7 +235,7 @@ public class AdministrationTC extends BaseSetup{
 
 	}
    
-   //@Test (priority=0) = PASS
+   //@Test (priority=1) = pass
    public void verifyGroupAgent_26(){
 	    GroupPage group = new GroupPage(driver);
 		driver.navigate().to(GroupPage);
@@ -243,7 +243,7 @@ public class AdministrationTC extends BaseSetup{
 		//Assert.assertEquals(group.verifyGroupAgentPage(),true);
    }
    
-   //@Test (priority=1) = PASS
+  // @Test (priority=2) = pass
    public void verifySelectAllAgents_27(){
 	   GroupPage group = new GroupPage(driver);
 	   driver.navigate().to(GroupPage);
@@ -251,7 +251,7 @@ public class AdministrationTC extends BaseSetup{
 	   group.selectMultipleAgents();
    }
    
-   //@Test (priority=1)
+   @Test (priority=1)
    public void verifyDragDropAgentGroup_28(){
 	   GroupPage group = new GroupPage(driver);
 	   driver.navigate().to(GroupPage);

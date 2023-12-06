@@ -9,16 +9,14 @@
 <test name="Create Manual Errand">
 <parameter name="browser" value="chrome"/>
 	<classes>
-		<class name="testCasesArea.ErrandAndWorkflowTC">
-			<methods>
-				<include name="verifyInternalComment_04"/>
-			</methods>
-		</class>
+		<class name="testCasesArea.ErrandAndWorkflowTC"/>
 	</classes>
 </test>
 </suite>
 
-
+<!-- 			<methods>
+				<include name="verifyAllComponentsInManualErrandPage_01"/>
+			</methods> -->
 	<!-- 		    <include name="verifyAllComponentsInManualErrandPage_01"/>
 				<include name="verifyCreateManualErrand_02"/>
 				<include name="verifySendManualErrand_03"/> -->

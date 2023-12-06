@@ -34,8 +34,8 @@ WebDriver driver;
 	@FindBy(how = How.XPATH, using="//*[@id='AdminGroup']/div[1]/div[1]/div/div/div[1]/h2")
 	WebElement groupTitle;
 	
-	//@FindBy(how = How.CSS, using="[data-qa-id='table-btn-Create New']")
-	//WebElement addNewButton;
+	@FindBy(how = How.CSS, using="[data-qa-id='table-btn-Create New']")
+	WebElement addNewButton2;
 	
 	@FindBy(how = How.XPATH, using="/html/body/div[1]/div/div/main/div[3]/div/div/section/div[2]/div[2]/div/div[1]/div[1]/div/div/div[2]/button[2]/i")
 	WebElement addNewButton;
@@ -100,7 +100,7 @@ WebDriver driver;
 	}
 	
 	public void clickAddButton(){
-		new WebDriverWait(driver, Duration.ofSeconds(50)).until(ExpectedConditions.visibilityOf(this.addNewButton)).click();
+		new WebDriverWait(driver, Duration.ofSeconds(50)).until(ExpectedConditions.visibilityOf(this.addNewButton2)).click();
 	}
 	
 	public void createNewGroup(){

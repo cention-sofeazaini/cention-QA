@@ -5,17 +5,17 @@
   <listeners>
     <listener class-name="base.Listeners"/>
   </listeners>
-  <test name="Administration(failed)">
+  <test name="Search(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCasesArea.AdministrationTC">
+      <class name="testCasesArea.SearchAndStatisticTC">
         <methods>
+          <include name="loginToApplication"/>
           <include name="tearDown"/>
           <include name="Base"/>
-          <include name="loginToApplication"/>
-          <include name="verifyAddNewGroupPage_10"/>
+          <include name="verifyOpenAndDownloadAttachmentFile_06"/>
         </methods>
-      </class> <!-- testCasesArea.AdministrationTC -->
+      </class> <!-- testCasesArea.SearchAndStatisticTC -->
     </classes>
-  </test> <!-- Administration(failed) -->
+  </test> <!-- Search(failed) -->
 </suite> <!-- Failed suite [cention-QA] -->
