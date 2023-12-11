@@ -41,6 +41,10 @@ public Search(WebDriver driver) {
 	@FindBy(how = How.XPATH, using="//*[@id='container']/div/div/div[3]/div/div[2]")
 	WebElement closePopUp;
 	
+	@FindBy(how = How.CSS, using="[data-qa-id='QA_cc_closeAcquireErrand']")
+	WebElement closePopUp2;
+	
+	
 	@FindBy(how = How.XPATH, using="//*[@id='page-wrapper']/section/div[2]/div[2]/div[1]/div[2]/div/div/ul/li[1]/div/div/div/div[1]/div/span/a")
 	WebElement startDate;
 	
@@ -94,7 +98,7 @@ public Search(WebDriver driver) {
 	
 	public void OpenSpecificErrand(){
 		new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOf(this.errand9724)).click();
-		new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOf(this.closePopUp)).click();
+		new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOf(this.closePopUp2)).click();
 		
 	}
 	

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="cention-QA" duration-ms="26072" started-at="2023-12-11T01:56:52Z" finished-at="2023-12-11T01:57:18Z">
+  <suite name="cention-QA" duration-ms="28397" started-at="2023-12-11T03:04:42Z" finished-at="2023-12-11T03:05:10Z">
     <groups>
     </groups>
-    <test name="Administration" duration-ms="26072" started-at="2023-12-11T01:56:52Z" finished-at="2023-12-11T01:57:18Z">
-      <class name="testCasesArea.AdministrationTC">
-        <test-method status="PASS" signature="Base(java.lang.String)[pri:0, instance:testCasesArea.AdministrationTC@679b62af]" name="Base" is-config="true" duration-ms="3248" started-at="2023-12-11T09:56:52Z" finished-at="2023-12-11T09:56:56Z">
+    <test name="Search" duration-ms="28397" started-at="2023-12-11T03:04:42Z" finished-at="2023-12-11T03:05:10Z">
+      <class name="testCasesArea.SearchAndStatisticTC">
+        <test-method status="PASS" signature="Base(java.lang.String)[pri:0, instance:testCasesArea.SearchAndStatisticTC@32cf48b7]" name="Base" is-config="true" duration-ms="3404" started-at="2023-12-11T11:04:42Z" finished-at="2023-12-11T11:04:45Z">
           <params>
             <param index="0">
               <value>
@@ -18,35 +18,43 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Base -->
-        <test-method status="PASS" signature="loginToApplication()[pri:0, instance:testCasesArea.AdministrationTC@679b62af]" name="loginToApplication" is-config="true" duration-ms="2449" started-at="2023-12-11T09:56:56Z" finished-at="2023-12-11T09:56:58Z">
+        <test-method status="PASS" signature="loginToApplication()[pri:0, instance:testCasesArea.SearchAndStatisticTC@32cf48b7]" name="loginToApplication" is-config="true" duration-ms="2316" started-at="2023-12-11T11:04:45Z" finished-at="2023-12-11T11:04:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApplication -->
-        <test-method status="PASS" signature="verifyAccountsPage_01()[pri:0, instance:testCasesArea.AdministrationTC@679b62af]" name="verifyAccountsPage_01" duration-ms="3861" started-at="2023-12-11T09:56:58Z" finished-at="2023-12-11T09:57:02Z">
+        <test-method status="PASS" signature="verifySearchPage_01()[pri:0, instance:testCasesArea.SearchAndStatisticTC@32cf48b7]" name="verifySearchPage_01" duration-ms="3747" started-at="2023-12-11T11:04:48Z" finished-at="2023-12-11T11:04:51Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyAccountsPage_01 -->
-        <test-method status="PASS" signature="verifyCreateNewEmail_02()[pri:0, instance:testCasesArea.AdministrationTC@679b62af]" name="verifyCreateNewEmail_02" duration-ms="2018" started-at="2023-12-11T09:57:02Z" finished-at="2023-12-11T09:57:04Z">
+        </test-method> <!-- verifySearchPage_01 -->
+        <test-method status="PASS" signature="verifySearchErrand_02()[pri:0, instance:testCasesArea.SearchAndStatisticTC@32cf48b7]" name="verifySearchErrand_02" duration-ms="244" started-at="2023-12-11T11:04:51Z" finished-at="2023-12-11T11:04:52Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyCreateNewEmail_02 -->
-        <test-method status="PASS" signature="verifyTestEmailAccount_03()[pri:0, instance:testCasesArea.AdministrationTC@679b62af]" name="verifyTestEmailAccount_03" duration-ms="6644" started-at="2023-12-11T09:57:04Z" finished-at="2023-12-11T09:57:11Z">
+        </test-method> <!-- verifySearchErrand_02 -->
+        <test-method status="PASS" signature="verifyOpenSearchedErrand_03()[pri:0, instance:testCasesArea.SearchAndStatisticTC@32cf48b7]" name="verifyOpenSearchedErrand_03" duration-ms="4174" started-at="2023-12-11T11:04:52Z" finished-at="2023-12-11T11:04:56Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyTestEmailAccount_03 -->
-        <test-method status="PASS" signature="verifyEditButtonAccount_04()[pri:0, instance:testCasesArea.AdministrationTC@679b62af]" name="verifyEditButtonAccount_04" duration-ms="4649" started-at="2023-12-11T09:57:11Z" finished-at="2023-12-11T09:57:15Z">
+        </test-method> <!-- verifyOpenSearchedErrand_03 -->
+        <test-method status="PASS" signature="verifySearchDateFilter_04()[pri:0, instance:testCasesArea.SearchAndStatisticTC@32cf48b7]" name="verifySearchDateFilter_04" duration-ms="3174" started-at="2023-12-11T11:04:56Z" finished-at="2023-12-11T11:04:59Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyEditButtonAccount_04 -->
-        <test-method status="PASS" signature="verifyDeleteEmailAccount_05()[pri:0, instance:testCasesArea.AdministrationTC@679b62af]" name="verifyDeleteEmailAccount_05" duration-ms="3186" started-at="2023-12-11T09:57:15Z" finished-at="2023-12-11T09:57:18Z">
+        </test-method> <!-- verifySearchDateFilter_04 -->
+        <test-method status="PASS" signature="verifyCollaborationSearchFilter_05()[pri:0, instance:testCasesArea.SearchAndStatisticTC@32cf48b7]" name="verifyCollaborationSearchFilter_05" duration-ms="3516" started-at="2023-12-11T11:04:59Z" finished-at="2023-12-11T11:05:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyDeleteEmailAccount_05 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCasesArea.AdministrationTC@679b62af]" name="tearDown" is-config="true" duration-ms="0" started-at="2023-12-11T09:57:18Z" finished-at="2023-12-11T09:57:18Z">
+        </test-method> <!-- verifyCollaborationSearchFilter_05 -->
+        <test-method status="PASS" signature="verifySearchAttachmentFile_06()[pri:0, instance:testCasesArea.SearchAndStatisticTC@32cf48b7]" name="verifySearchAttachmentFile_06" duration-ms="7454" started-at="2023-12-11T11:05:03Z" finished-at="2023-12-11T11:05:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchAttachmentFile_06 -->
+        <test-method status="PASS" signature="verifyOpenAndDownloadAttachmentFile_06()[pri:0, instance:testCasesArea.SearchAndStatisticTC@32cf48b7]" name="verifyOpenAndDownloadAttachmentFile_06" duration-ms="354" started-at="2023-12-11T11:05:10Z" finished-at="2023-12-11T11:05:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOpenAndDownloadAttachmentFile_06 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCasesArea.SearchAndStatisticTC@32cf48b7]" name="tearDown" is-config="true" duration-ms="1" started-at="2023-12-11T11:05:10Z" finished-at="2023-12-11T11:05:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testCasesArea.AdministrationTC -->
-    </test> <!-- Administration -->
+      </class> <!-- testCasesArea.SearchAndStatisticTC -->
+    </test> <!-- Search -->
   </suite> <!-- cention-QA -->
 </testng-results>
