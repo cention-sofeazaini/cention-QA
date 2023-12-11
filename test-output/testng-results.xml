@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="cention-QA" duration-ms="28397" started-at="2023-12-11T03:04:42Z" finished-at="2023-12-11T03:05:10Z">
+  <suite name="cention-QA" duration-ms="25167" started-at="2023-12-11T03:27:44Z" finished-at="2023-12-11T03:28:09Z">
     <groups>
     </groups>
-    <test name="Search" duration-ms="28397" started-at="2023-12-11T03:04:42Z" finished-at="2023-12-11T03:05:10Z">
+    <test name="Search" duration-ms="25167" started-at="2023-12-11T03:27:44Z" finished-at="2023-12-11T03:28:09Z">
       <class name="testCasesArea.SearchAndStatisticTC">
-        <test-method status="PASS" signature="Base(java.lang.String)[pri:0, instance:testCasesArea.SearchAndStatisticTC@32cf48b7]" name="Base" is-config="true" duration-ms="3404" started-at="2023-12-11T11:04:42Z" finished-at="2023-12-11T11:04:45Z">
+        <test-method status="PASS" signature="Base(java.lang.String)[pri:0, instance:testCasesArea.SearchAndStatisticTC@32cf48b7]" name="Base" is-config="true" duration-ms="2720" started-at="2023-12-11T11:27:44Z" finished-at="2023-12-11T11:27:47Z">
           <params>
             <param index="0">
               <value>
@@ -18,39 +18,39 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Base -->
-        <test-method status="PASS" signature="loginToApplication()[pri:0, instance:testCasesArea.SearchAndStatisticTC@32cf48b7]" name="loginToApplication" is-config="true" duration-ms="2316" started-at="2023-12-11T11:04:45Z" finished-at="2023-12-11T11:04:48Z">
+        <test-method status="PASS" signature="loginToApplication()[pri:0, instance:testCasesArea.SearchAndStatisticTC@32cf48b7]" name="loginToApplication" is-config="true" duration-ms="2500" started-at="2023-12-11T11:27:47Z" finished-at="2023-12-11T11:27:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApplication -->
-        <test-method status="PASS" signature="verifySearchPage_01()[pri:0, instance:testCasesArea.SearchAndStatisticTC@32cf48b7]" name="verifySearchPage_01" duration-ms="3747" started-at="2023-12-11T11:04:48Z" finished-at="2023-12-11T11:04:51Z">
+        <test-method status="PASS" signature="verifySearchPage_01()[pri:0, instance:testCasesArea.SearchAndStatisticTC@32cf48b7]" name="verifySearchPage_01" duration-ms="3117" started-at="2023-12-11T11:27:49Z" finished-at="2023-12-11T11:27:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchPage_01 -->
-        <test-method status="PASS" signature="verifySearchErrand_02()[pri:0, instance:testCasesArea.SearchAndStatisticTC@32cf48b7]" name="verifySearchErrand_02" duration-ms="244" started-at="2023-12-11T11:04:51Z" finished-at="2023-12-11T11:04:52Z">
+        <test-method status="PASS" signature="verifySearchErrand_02()[pri:0, instance:testCasesArea.SearchAndStatisticTC@32cf48b7]" name="verifySearchErrand_02" duration-ms="262" started-at="2023-12-11T11:27:52Z" finished-at="2023-12-11T11:27:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchErrand_02 -->
-        <test-method status="PASS" signature="verifyOpenSearchedErrand_03()[pri:0, instance:testCasesArea.SearchAndStatisticTC@32cf48b7]" name="verifyOpenSearchedErrand_03" duration-ms="4174" started-at="2023-12-11T11:04:52Z" finished-at="2023-12-11T11:04:56Z">
+        <test-method status="PASS" signature="verifyOpenSearchedErrand_03()[pri:0, instance:testCasesArea.SearchAndStatisticTC@32cf48b7]" name="verifyOpenSearchedErrand_03" duration-ms="4062" started-at="2023-12-11T11:27:52Z" finished-at="2023-12-11T11:27:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyOpenSearchedErrand_03 -->
-        <test-method status="PASS" signature="verifySearchDateFilter_04()[pri:0, instance:testCasesArea.SearchAndStatisticTC@32cf48b7]" name="verifySearchDateFilter_04" duration-ms="3174" started-at="2023-12-11T11:04:56Z" finished-at="2023-12-11T11:04:59Z">
+        <test-method status="PASS" signature="verifySearchDateFilter_04()[pri:0, instance:testCasesArea.SearchAndStatisticTC@32cf48b7]" name="verifySearchDateFilter_04" duration-ms="3108" started-at="2023-12-11T11:27:57Z" finished-at="2023-12-11T11:28:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchDateFilter_04 -->
-        <test-method status="PASS" signature="verifyCollaborationSearchFilter_05()[pri:0, instance:testCasesArea.SearchAndStatisticTC@32cf48b7]" name="verifyCollaborationSearchFilter_05" duration-ms="3516" started-at="2023-12-11T11:04:59Z" finished-at="2023-12-11T11:05:03Z">
+        <test-method status="PASS" signature="verifyCollaborationSearchFilter_05()[pri:0, instance:testCasesArea.SearchAndStatisticTC@32cf48b7]" name="verifyCollaborationSearchFilter_05" duration-ms="3103" started-at="2023-12-11T11:28:00Z" finished-at="2023-12-11T11:28:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCollaborationSearchFilter_05 -->
-        <test-method status="PASS" signature="verifySearchAttachmentFile_06()[pri:0, instance:testCasesArea.SearchAndStatisticTC@32cf48b7]" name="verifySearchAttachmentFile_06" duration-ms="7454" started-at="2023-12-11T11:05:03Z" finished-at="2023-12-11T11:05:10Z">
+        <test-method status="PASS" signature="verifySearchAttachmentFile_06()[pri:0, instance:testCasesArea.SearchAndStatisticTC@32cf48b7]" name="verifySearchAttachmentFile_06" duration-ms="5903" started-at="2023-12-11T11:28:03Z" finished-at="2023-12-11T11:28:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchAttachmentFile_06 -->
-        <test-method status="PASS" signature="verifyOpenAndDownloadAttachmentFile_06()[pri:0, instance:testCasesArea.SearchAndStatisticTC@32cf48b7]" name="verifyOpenAndDownloadAttachmentFile_06" duration-ms="354" started-at="2023-12-11T11:05:10Z" finished-at="2023-12-11T11:05:10Z">
+        <test-method status="PASS" signature="verifyOpenAndDownloadAttachmentFile_07()[pri:0, instance:testCasesArea.SearchAndStatisticTC@32cf48b7]" name="verifyOpenAndDownloadAttachmentFile_07" duration-ms="372" started-at="2023-12-11T11:28:09Z" finished-at="2023-12-11T11:28:09Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyOpenAndDownloadAttachmentFile_06 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCasesArea.SearchAndStatisticTC@32cf48b7]" name="tearDown" is-config="true" duration-ms="1" started-at="2023-12-11T11:05:10Z" finished-at="2023-12-11T11:05:10Z">
+        </test-method> <!-- verifyOpenAndDownloadAttachmentFile_07 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCasesArea.SearchAndStatisticTC@32cf48b7]" name="tearDown" is-config="true" duration-ms="1" started-at="2023-12-11T11:28:09Z" finished-at="2023-12-11T11:28:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

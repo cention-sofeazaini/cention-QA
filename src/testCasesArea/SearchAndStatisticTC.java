@@ -74,7 +74,7 @@ public class SearchAndStatisticTC extends BaseSetup {
 	}
 	
 	@Test(priority=6)
-	public void verifyOpenAndDownloadAttachmentFile_06(){
+	public void verifyOpenAndDownloadAttachmentFile_07(){
 		Search sch = new Search(driver);
 		sch.viewAttachmentButton();
 	}
