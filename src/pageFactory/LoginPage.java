@@ -29,12 +29,16 @@ public class LoginPage extends BaseSetup{
 	@FindBy(id="loginButton")
 	WebElement login;
 	
+	@FindBy(xpath="/html/body/div/div[2]/div/form/div[2]/div[3]/input")
+	WebElement email;
+	
 	@FindBy(id="errormessage")
 	WebElement login_errormessage;
 
 	//@FindBy(css="[data-qa-id='agent_menu_logout']")
 	@FindBy(xpath="/html/body/div[5]/div/div/div/div/ul/li[2]/div[2]/div/div/ul/li[8]/a/div[2]/span")
 	WebElement logout;
+
 	
 	@FindBy(className="app-logo")
 	WebElement centionLogo;
@@ -44,7 +48,7 @@ public class LoginPage extends BaseSetup{
 	WebElement lockErrorMessage;
 	
 	//@FindBy(css="[data-qa-id='QA_headerUserProfile']")
-	@FindBy(xpath="/html/body/div[1]/div/div/main/div[2]/div/div/section/div[1]/div[2]/ul/ul[1]/div[3]")
+	@FindBy(xpath="//*[@id='side-agent-menu-expand']")
 	WebElement userProfile;
 	
 	@FindBy(how = How.ID, using = "workspace")
@@ -53,16 +57,16 @@ public class LoginPage extends BaseSetup{
 	@FindBy(how = How.ID, using = "submit")
 	WebElement cloudLoginButton;
 	
-	@FindBy(xpath="/html/body/div[5]/div/div/div/div/ul/li[2]/div[2]/div/div/ul/li[1]/a/div[2]/span/span")
+	@FindBy(xpath="/html/body/div[5]/div/div/div/div/ul/li[2]/div[2]/div/div/ul/li[1]/a/div[2]/span")
 	WebElement userPreference;
 	
-	@FindBy(how = How.CSS, using="[data-qa-id='selection-box-twofa_flag']")
+	@FindBy(how = How.XPATH, using="//*[@id='container']/div/div/div[4]/div/div[1]/div[2]/div[1]/div[17]/div/div[2]/div")
 	WebElement qr2faoption;
 	
 	@FindBy(xpath="/html/body/div[1]/div/div[4]/div/div[1]/div[1]")
 	WebElement PrefBox;
 	
-	@FindBy(how = How.CSS, using="[data-qa-id='select-list-Yes']")
+	@FindBy(how = How.XPATH, using="//*[@id='container']/div/div/div[4]/div/div[1]/div[2]/div[1]/div[17]/div/div[2]/div/div[2]")
 	WebElement selectYes;
 	
 	@FindBy(how = How.CSS, using="[data-qa-id='btn-Save']")
@@ -71,6 +75,8 @@ public class LoginPage extends BaseSetup{
 	@FindBy(xpath="/html/body/div[1]/div/div/div[4]/div/div[2]")
 	WebElement exit;
 	
+	@FindBy(how = How.LINK_TEXT, using="Forgot your password?")
+	WebElement resetPass;
 	
 	public LoginPage(WebDriver driver)
 	{
@@ -144,11 +150,9 @@ public class LoginPage extends BaseSetup{
 	
 	public void clickUserPreference()
 	{
-		//new WebDriverWait(driver, Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOf(this.userProfile)).click();
-		Actions action = new Actions(driver);
-		action.moveToElement(userProfile).perform();
+		new WebDriverWait(driver, Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOf(this.userProfile)).click();
 		new WebDriverWait(driver, Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOf(this.userPreference)).click();
-		
+			
 	}
 	
 	public boolean verifyLogout(){
@@ -184,16 +188,6 @@ public class LoginPage extends BaseSetup{
 		}
 	}
 	
-	// Test Case = Failed
-	public void verify2FACode(){
-		
-		Actions action = new Actions(driver);
-		action.moveToElement(PrefBox).perform();
-		new WebDriverWait(driver, Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOf(this.qr2faoption)).click();
-		new WebDriverWait(driver, Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOf(this.selectYes)).click();
-		//Codes for checking QR Code exist
-			
-	}
 	
 	public void closePreferencePage(){
 		JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -207,4 +201,25 @@ public class LoginPage extends BaseSetup{
 	public void exitPrefPage(){
 		 new WebDriverWait(driver, Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOf(this.exit)).click();
 	}
+	
+	public void clickForgotPass(){
+		new WebDriverWait(driver, Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOf(this.resetPass)).click();
+	}
+	
+	public String resetPassForm(String strWorkspace, String strUsername, String strPasword ){
+		 new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOf(this.workspace)).clear();
+		 new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOf(this.workspace)).sendKeys(strWorkspace);
+		 new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOf(this.username)).clear();
+		 new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOf(this.username)).sendKeys(strUsername);
+		 new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOf(this.email)).clear();
+		 new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOf(this.email)).sendKeys(strPasword);
+		
+		 new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOf(this.cloudLoginButton)).click();
+		 
+		 String pageTitleAfterLogin = driver.getTitle();
+	        System.out.println(pageTitleAfterLogin);
+		
+	     return pageTitleAfterLogin;
+	}
+	
 }

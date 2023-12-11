@@ -11,9 +11,9 @@
 	<classes>
 		<class name="testCasesArea.LoginTC">
 			<methods>
-			    <include name="loginToApplication"/>
-			    <include name="VerifyQR2FA_02"/>	    
-				<include name="VerifyLogout_03"/>
+			    <include name="loginToApplication"/>    
+				<include name="VerifyLogout_02"/>
+				<include name="VerifyResetPassword_03"/>	
 			</methods>
 		</class>
 

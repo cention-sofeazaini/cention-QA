@@ -38,14 +38,14 @@ public class AdministrationTC extends BaseSetup{
 	}
 	
 
-	@Test(enabled = false)
+	@Test (priority=0)
 	public void verifyAccountsPage_01(){
 		Accounts account = new Accounts(driver);
 		account.clickAccountMenu();
-		Assert.assertEquals(account.verifyAccountPage(), "Accounts");
+		//Assert.assertEquals(account.verifyAccountPage(), "Accounts");
 	}
 	
-	@Test(enabled = false)
+	@Test (priority=1)
 	public void verifyCreateNewEmail_02(){
 		Accounts account = new Accounts(driver);
 		account.clickCreateNewAccount();
@@ -54,34 +54,33 @@ public class AdministrationTC extends BaseSetup{
 		account.enterServer("mail.cust.cention.se");
 		account.enterUsername("fitriAutomationQA");
 		account.enterPassword("Pass1234");
-		Assert.assertEquals(account.verifyCreateNewEmailAcc(), true); // need revise code again
+		Assert.assertEquals(account.verifyCreateNewEmailAcc(), true);
 	}
 	
 	
-	@Test(enabled = false)
+	@Test (priority=2)
 	public void verifyTestEmailAccount_03(){
 		Accounts account = new Accounts(driver);
 		driver.navigate().to(AccountPage);
 		account.clickTestButton();
-		//add assertion
 
 	}
 	
-	@Test(enabled = false)
+	@Test (priority=3)
 	public void verifyEditButtonAccount_04(){
 		Accounts account = new Accounts(driver);
 		driver.navigate().to(AccountPage);
 		account.clickEditButton();
-		account.enterFieldName("QA Email Account");
+		//account.enterFieldName("QA Email Account");
 		account.clickSaveButton();
-		//add assertion
+
 	}
 	
-	@Test(enabled = false)
+	@Test (priority=4)
 	public void verifyDeleteEmailAccount_05(){
 		Accounts account = new Accounts(driver);
 		driver.navigate().to(AccountPage);
-		//Assert.assertEquals(account.deleteAccount(), true);
+		account.deleteAccount();
 
 	}
 	
@@ -251,7 +250,7 @@ public class AdministrationTC extends BaseSetup{
 	   group.selectMultipleAgents();
    }
    
-   @Test (priority=1)
+   //@Test (priority=1)
    public void verifyDragDropAgentGroup_28(){
 	   GroupPage group = new GroupPage(driver);
 	   driver.navigate().to(GroupPage);

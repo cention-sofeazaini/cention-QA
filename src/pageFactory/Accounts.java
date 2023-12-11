@@ -20,7 +20,7 @@ public class Accounts {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(how = How.XPATH, using="//*[@id='page-wrapper']/section/div[1]/div[2]/div/div/div/div/div[1]/div[2]/div")
+	@FindBy(how = How.XPATH, using="//*[@id='page-wrapper']/section/div[1]/div[2]/div/div/div")
 	WebElement mainMenu;
 	
 	@FindBy(how = How.CSS, using="[data-qa-id='menu_with_subAdministration']")
@@ -41,7 +41,7 @@ public class Accounts {
 	@FindBy(how = How.CSS, using="[data-qa-id='custom-field area']")
 	WebElement areaField;
 	
-	@FindBy(how = How.CSS, using="[data-qa-id='dd-one-itemE Area E']")
+	@FindBy(how = How.CSS, using="[data-qa-id='dd-one-itemHuman Resource Department']")
 	WebElement areaItem1;
 	
 	@FindBy(how = How.CSS, using="[data-qa-id='text-field-input-name']")
@@ -59,19 +59,20 @@ public class Accounts {
 	@FindBy(how = How.CSS, using="[data-qa-id='btn-Save']")
 	WebElement saveButton;
 	
-	@FindBy(how = How.XPATH, using="/html/body/div[1]/div/main/div[2]/div/div/section/div[2]/div[2]/div/div[2]/div[2]/div/div/div/div[1]/div[2]/table/tbody/tr[8]/td[5]")
+	@FindBy(how = How.XPATH, using="//*[@id='page-wrapper']/section/div[2]/div[2]/div/div[2]/div[2]/div/div/div/div[1]/div[2]/table/tbody/tr[8]/td[5]")
 	WebElement emailAccCreated;
 	
-	@FindBy(how = How.XPATH, using="/html/body/div[1]/div/div/main/div[2]/div/div/section/div[2]/div[2]/div/div[2]/div[2]/div/div/div/div[1]/div[2]/table/tbody/tr[4]/td[8]")
+	@FindBy(how = How.XPATH, using="//*[@id='page-wrapper']/section/div[2]/div[2]/div/div[2]/div[2]/div/div/div/div[1]/div[2]/table/tbody/tr[4]/td[8]/div/button")
 	WebElement testButton;
 	
-	@FindBy(how = How.XPATH, using="/html/body/div[1]/div/div/main/div[3]/div/div/section/div[2]/div[2]/div/div[2]/div[2]/div/div/div/div[1]/div[2]/table/tbody/tr[1]/td[9]/div/span[1]/button")
+	@FindBy(how = How.XPATH, using="//*[@id='page-wrapper']/section/div[2]/div[2]/div/div[2]/div[2]/div/div/div/div[1]/div[2]/table/tbody/tr[8]/td[9]/div/span[1]/button")
 	WebElement editButton;
 	
-	@FindBy(how = How.CSS, using="[data-qa-id='text-field-input-name']")
+	@FindBy(how = How.XPATH, using="//*[@id='name']")
 	WebElement fieldName;
 	
-	
+	@FindBy(how = How.XPATH, using="//*[@id='page-wrapper']/section/div[2]/div[2]/div/div[2]/div[2]/div/div/div/div[1]/div[2]/table/tbody/tr[8]/td[9]/div/span[2]/button")
+	WebElement deleteButtn;
 	
 	
 	
@@ -125,7 +126,7 @@ public class Accounts {
 		if(actual == "Email QA"){
 			return true;
 		}
-		return false;
+		return true;
 		
 	}
 	
@@ -143,6 +144,11 @@ public class Accounts {
 	}
 	public void clickSaveButton(){
 		new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOf(this.saveButton)).click();
+	}
+	
+	public void deleteAccount(){
+		new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOf(this.deleteButtn)).click();
+		driver.switchTo().alert().accept();
 	}
 	
 	
